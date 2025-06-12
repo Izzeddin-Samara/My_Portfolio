@@ -1,0 +1,53 @@
+import { IoSend } from "react-icons/io5";
+import Link from "next/link";
+import { FaDownload } from "react-icons/fa";
+import { PiHandWavingFill } from "react-icons/pi";
+
+
+
+export default function HeroSection() {
+  return (
+    <>
+      <div className="min-h-screen w-full py-40">
+        <div className="mx-auto max-w-7xl p-4 md:p-8">
+          <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
+            <div>
+              <img
+                src="izzeddin-image.jpg"
+                className="mx-auto w-48 rounded-full object-cover md:w-96"
+                alt="izzeddin"
+              />{" "}
+            </div>
+            <div className="mt-10 w-full text-center">
+              <h1 className="mx-auto text-4xl flex items-center gap-2 justify-center leading-tight font-bold lg:text-5xl dark:text-white">
+                Hi, I'm Izzeddin <PiHandWavingFill className="wave mb-4 text-purple-700"  size={70}/>
+              </h1>
+              <p className="text-md mx-auto mt-12 text-justify text-lg text-gray-600 lg:text-xl dark:text-gray-300">
+                A passionate <strong>Frontend Developer</strong> specializing in
+                React, TypeScript, and Tailwind CSS. I build modern, responsive,
+                and accessible web applications
+              </p>
+              <div className="mt-10 flex justify-center gap-4">
+                <button
+                  type="button"
+                  className="flex cursor-pointer items-center gap-2 rounded-lg bg-purple-700 p-3 text-lg text-white outline-none hover:bg-purple-800 focus:ring-4 focus:ring-purple-300"
+                >
+                  Download CV <FaDownload size={20} />
+                </button>
+
+                <Link href="/contact">
+                  <button
+                    type="button"
+                    className="flex cursor-pointer items-center gap-2 rounded-lg bg-gray-500 p-4 text-xl text-white outline-none hover:bg-gray-600 focus:ring-4 focus:ring-gray-300"
+                  >
+                    Contact me <IoSend size={25} />
+                  </button>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+}
