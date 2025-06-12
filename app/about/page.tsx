@@ -23,6 +23,35 @@ export default function About() {
               interfaces and turning concepts into interactive web experiences.
             </p>
           </div>
+          <div className="text-md px-6 py-20 md:text-lg dark:text-white">
+            <h1 className="text-center text-2xl font-bold text-purple-700 md:text-4xl dark:text-purple-500">
+              Why I Entered Web Development?
+            </h1>
+            <p className="mt-8 mb-4 text-center text-justify">
+              My journey into web development started from a growing curiosity
+              about how websites are built. I come from a different background —
+              I studied accounting and worked in sales for several years. But
+              over time, I realized I wanted to do something more creative and
+              technical. I’ve always been interested in technology, and the idea
+              of building something from scratch that people can use online
+              really appealed to me.
+            </p>
+            <p className="text- mt- mb-4 text-center text-justify">
+              I joined a full-stack development bootcamp where I built real
+              projects using HTML, CSS, JavaScript and backend tools like
+              Django. Through that experience, I discovered how much I enjoy
+              frontend development — especially the process of turning ideas and
+              designs into responsive, user-friendly interfaces
+            </p>
+            <p className="text- mt- mb-4 text-center text-justify">
+              Now, I focus mostly on technologies like React, Next.js,
+              TypeScript, and Tailwind CSS. I enjoy creating clean, modern, and
+              accessible web experiences, and I’m continuously learning to
+              improve my skills. Web development gives me a strong sense of
+              purpose, combining creativity with problem-solving, and that's why
+              I chose this path
+            </p>
+          </div>
         </div>
       </div>
     </>
