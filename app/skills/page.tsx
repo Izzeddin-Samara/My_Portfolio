@@ -164,6 +164,32 @@ export default function Skills() {
               projects from start to finish
             </p>
           </div>
+
+          <div className="px-6 text-gray-900 dark:bg-gray-800">
+            <h1 className="mt-15 mb-10 text-center text-3xl font-bold text-purple-700 dark:text-purple-500">
+              Continuous Learning
+            </h1>
+            <p className="mb-4 text-center text-justify text-xl dark:text-white">
+              The tech landscape is constantly evolving, and staying current is
+              critical to remaining effective and innovative as a developer. I
+              am deeply committed to lifelong learning and embrace every
+              opportunity to expand my knowledge and expertise
+            </p>
+            <p className="mb-4 text-center text-justify text-xl dark:text-white">
+              Whether it’s through reading official documentation, experimenting
+              with new tools and libraries, or engaging with the developer
+              community, I stay proactive in sharpening my skills. I regularly
+              follow blogs, tutorials, and courses to understand best practices
+              and emerging trends
+            </p>
+            <p className="mb-4 text-center text-justify text-xl dark:text-white">
+              I also believe hands-on experience is invaluable — I enjoy
+              building side projects that challenge me to apply new concepts and
+              technologies in real-world contexts. This ongoing learning mindset
+              not only fuels my personal growth but also helps me deliver more
+              modern, efficient, and user-friendly software solutions
+            </p>
+          </div>
         </div>
       </div>
     </>
