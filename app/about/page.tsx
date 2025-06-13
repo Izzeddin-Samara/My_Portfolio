@@ -79,6 +79,23 @@ export default function About() {
               personally.
             </p>
           </div>
+
+          {/* CTA Section */}
+          <div className="px-6 py-20 text-center">
+            <h1 className="text-center text-xl font-bold md:text-2xl dark:text-white">
+              Looking for a passionate frontend developer who's always learning
+              and eager to bring ideas to life?
+            </h1>
+            <p className="mt-8 text-center text-sm md:text-lg dark:text-white">
+              I'd love to connect and explore opportunities where I can
+              contribute, grow, and build great things together.
+            </p>
+            <Link href="/contact">
+              <button className="mt-8 cursor-pointer rounded-lg bg-purple-700 p-4 text-2xl font-bold text-white outline-none hover:bg-purple-800 focus:ring-4 focus:ring-purple-300">
+                Contact Me Now!
+              </button>
+            </Link>
+          </div>
         </div>
       </div>
     </>
