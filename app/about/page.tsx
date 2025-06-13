@@ -52,6 +52,33 @@ export default function About() {
               I chose this path
             </p>
           </div>
+          <div className="text-md px-6 md:py-5 md:text-lg dark:text-white">
+            <h1 className="text-center text-2xl font-bold text-purple-700 md:text-4xl dark:text-purple-500">
+              My Long-Term Goals
+            </h1>
+            <p className="mb- mt-8 text-center text-justify">
+              In the long run, I want to become a highly skilled full-stack
+              developer who can build complete, scalable web applications from
+              start to finish. I aim to deepen my knowledge of modern frontend
+              frameworks like React and Next.js, while also expanding my backend
+              skills with Node.js and databases.
+            </p>
+            <p className="mb- mt-4 text-center text-justify">
+              I’m passionate about creating clean, efficient, and accessible
+              user experiences, and I hope to work on projects that make a
+              positive impact on users’ lives. Eventually, I want to contribute
+              to open-source projects, collaborate with talented teams, and
+              maybe even lead development projects.
+            </p>
+            <p className="mb- mt-4 text-center text-justify">
+              Continuous learning is very important to me — I plan to stay
+              up-to-date with new technologies, improve my problem-solving
+              skills, and maybe explore areas like UI/UX design and cloud
+              deployment. Ultimately, my goal is to build a rewarding career in
+              web development and keep growing both professionally and
+              personally.
+            </p>
+          </div>
         </div>
       </div>
     </>
