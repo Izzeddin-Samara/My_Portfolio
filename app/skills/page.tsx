@@ -1,6 +1,7 @@
 import { FaHtml5 } from "react-icons/fa";
 import { FaCss3Alt } from "react-icons/fa";
 import { SiTypescript } from "react-icons/si";
+import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
 import { SiDjango } from "react-icons/si";
 import { SiExpress } from "react-icons/si";
@@ -189,6 +190,21 @@ export default function Skills() {
               not only fuels my personal growth but also helps me deliver more
               modern, efficient, and user-friendly software solutions
             </p>
+          </div>
+          <div className="px-6 py-20 text-center">
+            <h1 className="text-center text-2xl font-bold dark:text-white">
+              Need a frontend developer who can turn ideas into clean,
+              responsive, and modern interfaces?
+            </h1>
+            <p className="mt-8 text-center text-xl dark:text-white">
+              Let’s build something awesome together.
+            </p>
+
+            <Link href="/contact">
+              <button className="mt-8 cursor-pointer rounded-lg bg-purple-700 p-4 text-2xl text-white outline-none hover:bg-purple-800 focus:ring-4 focus:ring-purple-300">
+                Contact Me Now!
+              </button>
+            </Link>
           </div>
         </div>
       </div>
