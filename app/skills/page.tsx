@@ -136,6 +136,34 @@ export default function Skills() {
               </ul>
             </div>
           </div>
+          <div className="px-6 py-10 text-gray-900 dark:bg-gray-800">
+            <h1 className="mt-15 mb-10 text-center text-3xl font-bold text-purple-700 dark:text-purple-500">
+              Soft Skills & Strengths
+            </h1>
+            <p className="mb-4 text-center text-justify text-xl dark:text-white">
+              Beyond technical skills, I believe that effective communication,
+              strong problem-solving abilities, and teamwork are the
+              cornerstones of successful software development. I take pride in
+              clearly articulating ideas and actively listening to teammates and
+              clients to ensure alignment and understanding.
+            </p>
+            <p className="mb-4 text-center text-justify text-xl dark:text-white">
+              I excel at breaking down complex problems into manageable steps
+              and approaching challenges with a positive, solution-oriented
+              mindset. Collaboration energizes me — I enjoy contributing to a
+              team environment where different perspectives come together to
+              create better outcomes. Time management and organization are also
+              key strengths of mine, allowing me to balance multiple tasks and
+              deadlines without compromising quality
+            </p>
+            <p className="mb-4 text-center text-justify text-xl dark:text-white">
+              In addition, I’m adaptable and open-minded, ready to take
+              constructive feedback and continuously improve both my technical
+              and interpersonal skills. These soft skills enable me to work
+              efficiently within diverse teams and contribute meaningfully to
+              projects from start to finish
+            </p>
+          </div>
         </div>
       </div>
     </>
