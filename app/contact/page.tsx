@@ -4,6 +4,20 @@ import { FaWhatsapp } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import InputField from "@/components/InputField";
 
+type formData = {
+  name: string;
+  email: string;
+  message: string;
+};
+
+type formErrors = {
+  name: string;
+  email: string;
+  message: string;
+};
+
+type formField = "name" | "email" | "message";
+
 export default function Contact() {
   return (
     <>
