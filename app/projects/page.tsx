@@ -17,7 +17,7 @@ export default function Projects() {
       icon: <HiUsers size={50} />,
       overview:
         "TeamBase is a web application for managing team member information. It includes login and registration, and lets users add, edit, delete, and search employee records.",
-      screenshot: "Home.jpg",
+      screenshot: "TeamBase.jpg",
       features: [
         "User authentication (login and registration)",
         "Add new employee records",
