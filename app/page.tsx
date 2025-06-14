@@ -1,4 +1,5 @@
 import HeroSection from "@/components/HeroSection";
+import WhatDrivesMe from "@/components/WhatDrivesMe";
 
 export default function Home() {
   
@@ -6,6 +7,7 @@ export default function Home() {
     <main className="dark:bg-gray-900">
       
      <HeroSection/>
+     <WhatDrivesMe/>
     </main>
   );
 }
