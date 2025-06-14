@@ -2,6 +2,7 @@ import { FaLocationDot } from "react-icons/fa6";
 import { FaEnvelope } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
+import InputField from "@/components/InputField";
 
 export default function Contact() {
   return (
@@ -31,21 +32,17 @@ export default function Contact() {
                     <div>
                       <label className="text-xl">Name</label>
 
-                      <input
-                        className="text-md md:text-md mt-4 w-full rounded-lg border border-gray-400 p-4 outline-none focus:ring-3 focus:ring-purple-700 md:p-4 dark:outline-none"
+                      <InputField
                         type="text"
                         name="name"
-                        placeholder="eg: John Doe"
                       />
                     </div>
                     <div>
                       <label className="text-xl">Email</label>
 
-                      <input
-                        className="text-md md:text-md mt-4 w-full rounded-lg border border-gray-400 p-4 outline-none focus:ring-3 focus:ring-purple-700 md:p-4"
+                      <InputField
                         type="text"
                         name="email"
-                        placeholder="eg: johndoe@gmail.com"
                       />
                     </div>
                     <div>
@@ -58,7 +55,6 @@ export default function Contact() {
                         placeholder="Write your message here"
                       ></textarea>
                     </div>
-
                     <button
                       type="submit"
                       className="w-full cursor-pointer rounded-lg bg-purple-700 p-4 text-xl font-bold text-white hover:bg-purple-800 focus:ring-4 focus:ring-purple-300"
