@@ -23,7 +23,7 @@ export default function HeroSection() {
                 Hi, I'm Izzeddin <PiHandWavingFill className="wave mb-4 text-purple-700"  size={70}/>
               </h1>
               <p className="text-md mx-auto mt-12 text-justify text-lg text-gray-600 lg:text-xl dark:text-gray-300">
-                A passionate <strong>Frontend Developer</strong> specializing in
+                A passionate <span className="dark:text-purple-500 text-purple-700 font-bold">Frontend Developer</span> specializing in
                 React, TypeScript, and Tailwind CSS. I build modern, responsive,
                 and accessible web applications
               </p>
