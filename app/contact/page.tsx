@@ -58,6 +58,17 @@ export default function Contact() {
     setErrors((prev) => ({ ...prev, [name]: message }));
   };
 
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
+  ) => {
+    const { name, value } = e.target;
+
+    setFormData((prev) => ({ ...prev, [name]: value }));
+
+    // Validate the field immediately for format errors
+    validateField(name, value);
+  };
+
   return (
     <>
       <div className="dark:bg-gray-800">
@@ -88,6 +99,7 @@ export default function Contact() {
                       <InputField
                         type="text"
                         name="name"
+                        onChange={handleChange}
                         value={formData.name}
                         error={errors.name}
                       />
@@ -98,6 +110,7 @@ export default function Contact() {
                       <InputField
                         type="text"
                         name="email"
+                        onChange={handleChange}
                         value={formData.email}
                         error={errors.email}
                       />
@@ -110,6 +123,7 @@ export default function Contact() {
                         name="message"
                         className="text-md mt-2 h-48 w-full resize-none rounded-lg border border-gray-400 bg-gray-100 p-3 outline-none focus:ring-3 focus:ring-purple-700 dark:bg-gray-300"
                         placeholder="Write your message here"
+                        onChange={handleChange}
                         value={formData.message}
                       ></textarea>
                     </div>
