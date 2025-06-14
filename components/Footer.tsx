@@ -1,0 +1,115 @@
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaEnvelope } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
+import Link from "next/link";
+
+export default function Footer() {
+  return (
+    <>
+      <footer className="bg-purple-200 p-4 dark:bg-gray-700">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div>
+            <h1 className="text-xl font-bold text-purple-700 text-center md:text-left dark:text-purple-500">
+              Izzeddin Samara
+            </h1>
+          </div>
+          <div>
+            <ul className="flex flex-col md:flex-row items-center justify-center gap-6 dark:text-white">
+              <li>
+                <Link
+                  className="border-b-2 border-transparent pb-0.5 text-sm transition-all hover:border-purple-700 dark:hover:border-purple-500"
+                  href="/"
+                >
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="border-b-2 border-transparent pb-0.5 text-sm transition-all hover:border-purple-700 dark:hover:border-purple-500"
+                  href="/about"
+                >
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="border-b-2 border-transparent pb-0.5 text-sm transition-all hover:border-purple-700 dark:hover:border-purple-500"
+                  href="/contact"
+                >
+                  Contact
+                </Link>
+              </li>
+
+              <li>
+                <Link
+                  className="border-b-2 border-transparent pb-0.5 text-sm transition-all hover:border-purple-700 dark:hover:border-purple-500"
+                  href="/skills"
+                >
+                  Skills
+                </Link>
+              </li>
+
+              <li>
+                <Link
+                  className="border-b-2 border-transparent pb-0.5 text-sm transition-all hover:border-purple-700 dark:hover:border-purple-500"
+                  href="/projects"
+                >
+                  Projects
+                </Link>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <ul className="mt-1 flex justify-center md:justify-end gap-6 dark:text-white">
+              <li>
+                <a
+                  href="https://github.com/Izzeddin-Samara"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-gray-500 dark:hover:text-gray-300"
+                >
+                  <FaGithub size={20} />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/izzeddin-samara/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-gray-500 dark:hover:text-gray-300"
+                >
+                  <FaLinkedin size={20} />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="mailto:izzidinsamara@gmail.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-gray-500 dark:hover:text-gray-300"
+                >
+                  <FaEnvelope size={20} />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://api.whatsapp.com/send/?phone=00972595484832&text&type=phone_number&app_absent=0"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-gray-500 dark:hover:text-gray-300"
+                >
+                  <FaWhatsapp size={20} />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr className="my-6 border-purple-700 sm:mx-auto lg:my-2 dark:border-purple-500" />{" "}
+        <p className="mt-2 text-center text-xs text-gray-950 dark:text-white">
+          © Izzeddin Samara. All rights reserved.
+        </p>
+      </footer>
+    </>
+  );
+}
