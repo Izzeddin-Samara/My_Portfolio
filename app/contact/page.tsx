@@ -130,15 +130,19 @@ export default function Contact() {
                     </div>
                     <div>
                       <label className="text-xl">Message</label>
-
                       <textarea
                         id="message"
                         name="message"
-                        className="text-md mt-2 h-48 w-full resize-none rounded-lg border border-gray-400 bg-gray-100 p-3 outline-none focus:ring-3 focus:ring-purple-700 dark:bg-gray-300"
                         placeholder="Write your message here"
                         onChange={handleChange}
                         value={formData.message}
+                        className={`text-md mt-2 h-48 w-full resize-none rounded-lg border border-gray-400 bg-gray-100 p-3 outline-none focus:ring-3 focus:ring-purple-700 dark:bg-gray-300 ${
+                          errors.message
+                            ? "border-red-600 focus:ring-red-600"
+                            : "border-gray-300 focus:ring-blue-800"
+                        }`}
                       ></textarea>
+                      {errors.message && <p className="text-center text-red-700">{errors.message}</p>}
                     </div>
                     <button
                       type="submit"
