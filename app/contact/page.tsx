@@ -61,6 +61,8 @@ export default function Contact() {
                       <InputField
                         type="text"
                         name="name"
+                        value={formData.name}
+                        error={errors.name}
                       />
                     </div>
                     <div>
@@ -69,6 +71,8 @@ export default function Contact() {
                       <InputField
                         type="text"
                         name="email"
+                        value={formData.email}
+                        error={errors.email}
                       />
                     </div>
                     <div>
@@ -79,6 +83,7 @@ export default function Contact() {
                         name="message"
                         className="text-md mt-2 h-48 w-full resize-none rounded-lg border border-gray-400 bg-gray-100 p-3 outline-none focus:ring-3 focus:ring-purple-700 dark:bg-gray-300"
                         placeholder="Write your message here"
+                        value={formData.message}
                       ></textarea>
                     </div>
                     <button
