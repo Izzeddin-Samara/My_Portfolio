@@ -21,7 +21,7 @@ export default function Navbar() {
           <h1 className="text-2xl font-bold text-purple-700 lg:text-4xl dark:text-purple-500">
             Izzeddin Samara
           </h1>
-          <ul className="hidden items-center space-x-8 md:flex dark:text-white">
+          <ul className="hidden items-center space-x-8 lg:flex dark:text-white">
             <li>
               <Link
                 href="/"
@@ -87,14 +87,14 @@ export default function Navbar() {
             </li>
           </ul>
           {/* Hamburger Icon (only visible on mobile) */}
-          <button onClick={toggle} className="m-4 md:hidden dark:text-white">
+          <button onClick={toggle} className="m-4 lg:hidden dark:text-white">
             {isOpen ? <FaTimes size={30} /> : <FaBars size={30} />}
           </button>
         </div>
 
         {/* Mobile Menu (Hidden by default, shown when `isOpen` is true) */}
         <ul
-          className={`space-y-4 bg-gray-300 p-4 text-center md:hidden dark:bg-gray-700 dark:text-white ${
+          className={`space-y-4 bg-gray-300 p-4 text-center lg:hidden dark:bg-gray-700 dark:text-white ${
             isOpen ? "block" : "hidden"
           }`}
         >
