@@ -7,6 +7,7 @@ import { SiExpress } from "react-icons/si";
 import { SiMongodb } from "react-icons/si";
 import { HiUsers } from "react-icons/hi2";
 import { IoIosRocket } from "react-icons/io";
+import Link from "next/link";
 import { FaCheckCircle } from "react-icons/fa";
 
 export default function Projects() {
@@ -158,6 +159,22 @@ export default function Projects() {
                 </div>
               </div>
             ))}
+          </div>
+          <div className="px-6 py-30 text-center">
+            <h1 className="text-center text-2xl font-bold dark:text-white">
+              Have a creative idea, business need, or technical challenge that
+              needs a smart solution?
+            </h1>
+            <p className="mt-8 text-center text-lg dark:text-white">
+              Let’s work together to build something that’s smart, scalable, and
+              beautifully designed.
+            </p>
+
+            <Link href="/contact">
+              <button className="mt-8 cursor-pointer rounded-lg bg-purple-700 p-4 text-2xl text-white outline-none hover:bg-purple-800 focus:ring-4 focus:ring-purple-300">
+                Contact Me Now!
+              </button>
+            </Link>
           </div>
         </div>
       </div>
