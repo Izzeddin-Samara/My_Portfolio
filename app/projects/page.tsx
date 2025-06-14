@@ -81,22 +81,22 @@ export default function Projects() {
           
           {/* Project card */}
           <div className="grid grid-cols-1 md:grid-cols-1">
-            {projects.map((project, index) => (
+            {projects.map(({ name, icon, overview, screenshot, features, techstack, liveDemo, githubrepo }, index) => (
               <div className="p-8 text-center dark:text-white bg-" key={index}>
                 <div className="mt-8 rounded-lg p-4 shadow-lg bg-purple-200  dark:bg-gray-700">
                   <h1 className="mt-8 flex items-center justify-center gap-2 text-4xl font-bold text-purple-700 dark:text-purple-500">
-                    {project.icon}
-                    {project.name}
+                    {icon}
+                    {name}
                   </h1>
                   <h3 className="mt-16 text-xl font-semibold">Overview:</h3>
                   <div>
                     <p className="mx-auto mt-8 w-3/4 text-justify text-gray-600 dark:text-gray-300">
-                      {project.overview}
+                      {overview}
                     </p>
                     <div className="mt-8">
                       <img
                         className="mx-auto w-full max-w-4xl rounded-lg shadow-xl"
-                        src={project.screenshot}
+                        src={screenshot}
                         alt=""
                       />
                     </div>
@@ -107,7 +107,7 @@ export default function Projects() {
                         Features:
                       </h3>
                       <ul className="mt-8 space-y-4 text-left">
-                        {project.features.map((feature, index) => (
+                        {features.map((feature, index) => (
                           <li key={index} className="flex items-start gap-2">
                             <FaCheckCircle
                               className="mt-1 flex-shrink-0 text-green-600 dark:text-green-400"
@@ -123,13 +123,13 @@ export default function Projects() {
                     <div>
                       <h3 className="mt-8 text-xl font-semibold">Tech Stack</h3>
                       <ul className="mt-8 flex flex-col items-center justify-center gap-8 md:flex-row">
-                        {project.techstack.map((stack, index) => (
+                        {techstack.map((stack, index) => (
                           <li key={index}>{stack}</li>
                         ))}
                       </ul>
                       <div className="mt-20 flex flex-col justify-center gap-4 md:flex-row">
                         <a
-                          href={project.liveDemo}
+                          href={liveDemo}
                           target="_blank"
                           rel="noopener noreferrer"
                         >
@@ -142,7 +142,7 @@ export default function Projects() {
                         </a>
 
                         <a
-                          href={project.githubrepo}
+                          href={githubrepo}
                           target="_blank"
                           rel="noopener noreferrer"
                         >
