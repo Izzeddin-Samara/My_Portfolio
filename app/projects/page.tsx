@@ -1,11 +1,13 @@
 import { SiTypescript } from "react-icons/si";
+import { FaGlobe } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 import { FaReact } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { SiExpress } from "react-icons/si";
 import { SiMongodb } from "react-icons/si";
 import { HiUsers } from "react-icons/hi2";
 import { IoIosRocket } from "react-icons/io";
-
+import { FaCheckCircle } from "react-icons/fa";
 
 export default function Projects() {
   const projects = [
@@ -74,6 +76,88 @@ export default function Projects() {
               free to explore, try the live demos, and get a glimpse of what I
               can do
             </p>
+          </div>
+          
+          {/* Project card */}
+          <div className="grid grid-cols-1 md:grid-cols-1">
+            {projects.map((project, index) => (
+              <div className="p-8 text-center dark:text-white bg-" key={index}>
+                <div className="mt-8 rounded-lg p-4 shadow-lg bg-purple-200  dark:bg-gray-700">
+                  <h1 className="mt-8 flex items-center justify-center gap-2 text-4xl font-bold text-purple-700 dark:text-purple-500">
+                    {project.icon}
+                    {project.name}
+                  </h1>
+                  <h3 className="mt-16 text-xl font-semibold">Overview:</h3>
+                  <div>
+                    <p className="mx-auto mt-8 w-3/4 text-justify text-gray-600 dark:text-gray-300">
+                      {project.overview}
+                    </p>
+                    <div className="mt-8">
+                      <img
+                        className="mx-auto w-full max-w-4xl rounded-lg shadow-xl"
+                        src={project.screenshot}
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div className="flex flex-col justify-center gap-16 md:flex-row">
+                    <div>
+                      <h3 className="mt-8 text-center text-xl font-semibold">
+                        Features:
+                      </h3>
+                      <ul className="mt-8 space-y-4 text-left">
+                        {project.features.map((feature, index) => (
+                          <li key={index} className="flex items-start gap-2">
+                            <FaCheckCircle
+                              className="mt-1 flex-shrink-0 text-green-600 dark:text-green-400"
+                              size={18}
+                            />
+                            <span className="text-sm sm:text-base">
+                              {feature}
+                            </span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                    <div>
+                      <h3 className="mt-8 text-xl font-semibold">Tech Stack</h3>
+                      <ul className="mt-8 flex flex-col items-center justify-center gap-8 md:flex-row">
+                        {project.techstack.map((stack, index) => (
+                          <li key={index}>{stack}</li>
+                        ))}
+                      </ul>
+                      <div className="mt-20 flex flex-col justify-center gap-4 md:flex-row">
+                        <a
+                          href={project.liveDemo}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <button
+                            type="button"
+                            className="flex w-full cursor-pointer items-center justify-center gap-2 rounded-lg bg-purple-700 p-4 text-xl text-white outline-none hover:bg-purple-800 hover:shadow-xl focus:ring-4 focus:ring-purple-300"
+                          >
+                            Live Demo <FaGlobe size={25} />
+                          </button>
+                        </a>
+
+                        <a
+                          href={project.githubrepo}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <button
+                            type="button"
+                            className="flex w-full cursor-pointer items-center justify-center gap-2 rounded-lg bg-gray-800 p-4 text-xl text-white outline-none hover:bg-gray-950 hover:shadow-xl focus:ring-4 focus:ring-gray-300"
+                          >
+                            View on GitHub <FaGithub size={25} />
+                          </button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>
