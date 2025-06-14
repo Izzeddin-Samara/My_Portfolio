@@ -2,7 +2,6 @@
 
 body {
   font-family: "Poppins", sans-serif !important;
-  background-color: oklch(0.95 0.03 307.26);
 }
 
 @import "tailwindcss";
