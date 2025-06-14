@@ -1,7 +1,8 @@
-import { FaLocationDot } from "react-icons/fa6";
+"use client";
 import { FaEnvelope } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
+import { useState } from "react";
 import InputField from "@/components/InputField";
 
 type formData = {
@@ -19,6 +20,17 @@ type formErrors = {
 type formField = "name" | "email" | "message";
 
 export default function Contact() {
+  const [formData, setFormData] = useState<formData>({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const [errors, setErrors] = useState<formErrors>({
+    name: "",
+    email: "",
+    message: "",
+  });
   return (
     <>
       <div className="dark:bg-gray-800">
