@@ -31,6 +31,33 @@ export default function Contact() {
     email: "",
     message: "",
   });
+
+  const validateField = (name: string, value: string) => {
+    let message = "";
+
+    switch (name) {
+      case "name":
+        if (!value) message = "Name is required";
+        else if (value.length < 2)
+          message = "Name should be at least 2 characters";
+        break;
+
+      case "email":
+        if (!value) message = "Email is required";
+        else if (!/\S+@\S+\.\S+/.test(value))
+          message = "Please enter a valid email";
+        break;
+
+      case "message":
+        if (!value) message = "Message is required";
+        else if (value.length < 30)
+          message = "Message should be at least 30 characters";
+        break;
+    }
+
+    setErrors((prev) => ({ ...prev, [name]: message }));
+  };
+
   return (
     <>
       <div className="dark:bg-gray-800">
