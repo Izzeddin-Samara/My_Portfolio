@@ -32,6 +32,9 @@ export default function Contact() {
     message: "",
   });
 
+  const [success, setSuccess] = useState<string>("");
+  const [error, setError] = useState<string>("");
+
   const validateField = (name: string, value: string) => {
     let message = "";
 
@@ -82,6 +85,37 @@ export default function Contact() {
     return isValid;
   };
 
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+
+    if (validateForm()) {
+      try {
+        const res = await fetch("http://localhost:3000/api/contact", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        });
+
+        const data = await res.json();
+
+        if (data.success) {
+          setSuccess("You Message sent successfully")
+          setError("");
+          setFormData({ name: "", email: "", message: "" }); // reset form
+          setErrors({ name: "", email: "", message: "" }); // clear errors
+        } else {
+          setError("Failed to send message. Please try again later.");
+          setSuccess("");
+        }
+      } catch (err) {
+        console.error(err);
+      }
+    }
+  };
+
+
   return (
     <>
       <div className="dark:bg-gray-800">
@@ -98,14 +132,16 @@ export default function Contact() {
               </p>
             </div>
           </div>
+          {success && <p className="text-green-600">{success}</p>}
+          {error && <p className="text-red-600">{error}</p>}
 
           {/* Contact body*/}
           <div className="w-full">
-            <div className="mx-auto h-auto max-w-4xl p-4">
+            <div className="mx-auto h-auto max-w-4xl p-">
               <div className="mx-auto grid grid-cols-1 gap-8 md:grid-cols-1 lg:grid-cols-1">
                 {/* Contact Form*/}
                 <div className="rounded-lg bg-gray-100 p-4 shadow-xl dark:bg-gray-300">
-                  <form className="mx-auto w-3/4 space-y-6 p-4 text-center">
+                  <form onSubmit={handleSubmit} className="mx-auto space-y-6 p-4 text-center">
                     <div>
                       <label className="text-xl">Name</label>
 
