@@ -8,7 +8,7 @@ import { PiHandWavingFill } from "react-icons/pi";
 export default function HeroSection() {
   return (
     <>
-      <div className="min-h-screen w-full py-40">
+      <div className="w-full py-40">
         <div className="mx-auto max-w-7xl p-4 md:p-8">
           <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
             <div>
