@@ -4,6 +4,14 @@ import { FaWhatsapp } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { useState } from "react";
 import InputField from "@/components/InputField";
+import {
+  Button,
+  Modal,
+  ModalBody,
+  ModalFooter,
+} from "flowbite-react";
+import { Spinner } from "flowbite-react";
+import { FaCheckCircle } from "react-icons/fa";
 
 type formData = {
   name: string;
@@ -34,6 +42,9 @@ export default function Contact() {
 
   const [success, setSuccess] = useState<string>("");
   const [error, setError] = useState<string>("");
+
+  const [modalContent, setModalContent] = useState("loading"); // Tracks modal state ('loading' or 'success')
+  const [showModal, setShowModal] = useState(false); // Controls modal visibility
 
   const validateField = (name: string, value: string) => {
     let message = "";
@@ -90,6 +101,8 @@ export default function Contact() {
 
     if (validateForm()) {
       try {
+        setShowModal(true);
+        setModalContent("loading");
         const res = await fetch("http://localhost:3000/api/contact", {
           method: "POST",
           headers: {
@@ -101,20 +114,26 @@ export default function Contact() {
         const data = await res.json();
 
         if (data.success) {
-          setSuccess("You Message sent successfully")
-          setError("");
-          setFormData({ name: "", email: "", message: "" }); // reset form
-          setErrors({ name: "", email: "", message: "" }); // clear errors
+          setTimeout(() => {
+            setModalContent("success");
+            setError("");
+            setFormData({ name: "", email: "", message: "" });
+            setErrors({ name: "", email: "", message: "" });
+          }, 5000);
         } else {
           setError("Failed to send message. Please try again later.");
           setSuccess("");
         }
       } catch (err) {
+        setShowModal(false);
         console.error(err);
       }
     }
   };
 
+  const handleCloseModal = () => {
+    setShowModal(false);
+  };
 
   return (
     <>
@@ -137,11 +156,14 @@ export default function Contact() {
 
           {/* Contact body*/}
           <div className="w-full">
-            <div className="mx-auto h-auto max-w-4xl p-">
+            <div className="mx-auto h-auto max-w-4xl p-4">
               <div className="mx-auto grid grid-cols-1 gap-8 md:grid-cols-1 lg:grid-cols-1">
                 {/* Contact Form*/}
                 <div className="rounded-lg bg-gray-100 p-4 shadow-xl dark:bg-gray-300">
-                  <form onSubmit={handleSubmit} className="mx-auto space-y-6 p-4 text-center">
+                  <form
+                    onSubmit={handleSubmit}
+                    className="mx-auto w-3/4 space-y-6 p-4 text-center"
+                  >
                     <div>
                       <label className="text-xl">Name</label>
 
@@ -178,7 +200,11 @@ export default function Contact() {
                             : "border-gray-300 focus:ring-blue-800"
                         }`}
                       ></textarea>
-                      {errors.message && <p className="text-center text-red-700">{errors.message}</p>}
+                      {errors.message && (
+                        <p className="text-center text-red-700">
+                          {errors.message}
+                        </p>
+                      )}
                     </div>
                     <button
                       type="submit"
@@ -241,6 +267,52 @@ export default function Contact() {
           </div>
         </div>
       </div>
+      <Modal show={showModal} size="md">
+        <ModalBody>
+          {modalContent === "loading" ? (
+            <div className="mx-auto flex max-w-xs flex-col items-center justify-center space-y-6 rounded-lg bg-purple-50 p-6 shadow-md">
+              <Spinner
+                aria-label="Loading spinner"
+                size="xl"
+                color="purple"
+                className="animate-spin"
+              />
+              <p className="text-lg font-medium text-purple-700">
+                Sending your message...
+              </p>
+              <p className="text-sm text-purple-500 italic">
+                Please wait a moment while we process your request.
+              </p>
+            </div>
+          ) : (
+            <div className="mx-auto max-w-md rounded-lg bg-green-100 p-6 text-center shadow-md">
+              <FaCheckCircle
+                size={60}
+                className="mx-auto mb-4 text-green-600"
+              />
+              <h2 className="text-2xl font-semibold text-green-700">
+                Message Sent!
+              </h2>
+              <p className="mt-2 text-green-700">
+                Thank you for reaching out. I have received your message and
+                will get back to you as soon as possible.
+              </p>
+              <p className="mt-1 text-sm text-green-600">Have a great day!</p>
+            </div>
+          )}
+        </ModalBody>
+        <ModalFooter>
+          {modalContent === "success" && (
+            <Button
+              className="cursor-pointer"
+              color="purple"
+              onClick={handleCloseModal}
+            >
+              Close
+            </Button>
+          )}
+        </ModalFooter>
+      </Modal>
     </>
   );
 }
