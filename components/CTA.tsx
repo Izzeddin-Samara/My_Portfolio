@@ -6,8 +6,8 @@ export default function CTA() {
       <div className="px-6 py-20 text-center w-3/4 mx-auto">
         <h1 className="text-center text-xl font-bold md:text-xl  dark:text-white">
           Available for hire and always open to exciting opportunities. If
-          you're looking for a frontend developer who cares about clean code,
-          beautiful design, and real user experience — let’s talk
+          you&rsquo;re looking for a frontend developer who cares about clean code,
+          beautiful design, and real user experience — let&rsquo;s talk
         </h1>
         
         <Link href="/contact">

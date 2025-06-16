@@ -101,7 +101,7 @@ export default function Projects() {
               Projects
             </h1>
             <p className="mx-auto mt-10 w-[90%] text-justify text-xl dark:text-white">
-              Here you'll find a selection of the applications and websites I've
+              Here you&rsquo;ll find a selection of the applications and websites I&rsquo;ve
               built. Each project showcases my skills with modern technologies
               and my passion for creating clean, user-friendly experiences. Feel
               free to explore, try the live demos, and get a glimpse of what I

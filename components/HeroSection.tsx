@@ -20,7 +20,7 @@ export default function HeroSection() {
             </div>
             <div className="mt-10 w-full text-center">
               <h1 className="mx-auto text-4xl flex items-center gap-2 justify-center leading-tight font-bold lg:text-5xl dark:text-white">
-                Hi, I'm Izzeddin <PiHandWavingFill className="wave mb-4 text-purple-700"  size={70}/>
+                Hi, I&rsquo;m Izzeddin <PiHandWavingFill className="wave mb-4 text-purple-700"  size={70}/>
               </h1>
               <p className="text-md mx-auto mt-12 text-justify text-lg text-gray-600 lg:text-xl dark:text-gray-300">
                 A passionate <span className="dark:text-purple-500 text-purple-700 font-bold">Frontend Developer</span> specializing in
