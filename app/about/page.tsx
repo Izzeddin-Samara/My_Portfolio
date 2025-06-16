@@ -9,30 +9,30 @@ export default function About() {
             <h1 className="mt-15 mb-10 text-center text-2xl font-bold text-purple-700 md:text-4xl dark:text-purple-500">
               About me
             </h1>
-            <p className="text-md mb-4 text-center text-justify md:text-xl leading-loose dark:text-white">
-              I'm Izzeddin, a{" "}
+            <p className="text-md mb-4 text-center text-justify leading-loose md:text-xl dark:text-white">
+              I&rsquo;m Izzeddin, a{" "}
               <span className="font-bold text-purple-700 dark:text-purple-400">
                 Frontend Developer
               </span>{" "}
               with a strong passion for building beautiful and functional web
               experiences. I completed a full-stack development bootcamp at
               AXSOS Academy and have a degree in Accounting from An-Najah
-              National University. I'm currently focusing on React, Tailwind
+              National University. I&rsquo;m currently focusing on React, Tailwind
               CSS, and modern web development. With a background in customer
               service and a sharp eye for design, I enjoy designing sleek
               interfaces and turning concepts into interactive web experiences.
             </p>
           </div>
-          <div className="text-md px-6 py-20 md:text-xl dark:text-white ">
+          <div className="text-md px-6 py-20 md:text-xl dark:text-white">
             <h1 className="text-center text-2xl font-bold text-purple-700 md:text-4xl dark:text-purple-500">
               Why I Entered Web Development?
             </h1>
-            <p className="mt-8 mb-4 text-center text-justify leading-loose ">
+            <p className="mt-8 mb-4 text-center text-justify leading-loose">
               My journey into web development started from a growing curiosity
-              about how websites are built. I come from a different background —
+              about how websites are built. I come from a different background — 
               I studied accounting and worked in sales for several years. But
               over time, I realized I wanted to do something more creative and
-              technical. I’ve always been interested in technology, and the idea
+              technical. I&rsquo;ve always been interested in technology, and the idea
               of building something from scratch that people can use online
               really appealed to me.
             </p>
@@ -41,15 +41,15 @@ export default function About() {
               projects using HTML, CSS, JavaScript and backend tools like
               Django. Through that experience, I discovered how much I enjoy
               frontend development — especially the process of turning ideas and
-              designs into responsive, user-friendly interfaces
+              designs into responsive, user-friendly interfaces.
             </p>
             <p className="text- mt- mb-4 text-center text-justify leading-loose">
               Now, I focus mostly on technologies like React, Next.js,
               TypeScript, and Tailwind CSS. I enjoy creating clean, modern, and
-              accessible web experiences, and I’m continuously learning to
+              accessible web experiences, and I&rsquo;m continuously learning to
               improve my skills. Web development gives me a strong sense of
-              purpose, combining creativity with problem-solving, and that's why
-              I chose this path
+              purpose, combining creativity with problem-solving, and that&rsquo;s why
+              I chose this path.
             </p>
           </div>
           <div className="text-md px-6 md:py-5 md:text-xl dark:text-white">
@@ -64,9 +64,9 @@ export default function About() {
               skills with Node.js and databases.
             </p>
             <p className="mb- mt-4 text-center text-justify leading-loose">
-              I’m passionate about creating clean, efficient, and accessible
+              I&rsquo;m passionate about creating clean, efficient, and accessible
               user experiences, and I hope to work on projects that make a
-              positive impact on users’ lives. Eventually, I want to contribute
+              positive impact on users&rsquo; lives. Eventually, I want to contribute
               to open-source projects, collaborate with talented teams, and
               maybe even lead development projects.
             </p>
@@ -83,11 +83,11 @@ export default function About() {
           {/* CTA Section */}
           <div className="px-6 py-20 text-center">
             <h1 className="text-center text-xl font-bold md:text-2xl dark:text-white">
-              Looking for a passionate frontend developer who's always learning
+              Looking for a passionate frontend developer who&rsquo;s always learning
               and eager to bring ideas to life?
             </h1>
             <p className="mt-8 text-center text-sm md:text-xl dark:text-white">
-              I'd love to connect and explore opportunities where I can
+              I&rsquo;d love to connect and explore opportunities where I can
               contribute, grow, and build great things together.
             </p>
             <Link href="/contact">
