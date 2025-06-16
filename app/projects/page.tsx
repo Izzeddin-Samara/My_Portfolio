@@ -1,3 +1,5 @@
+"use client";
+
 import { SiTypescript } from "react-icons/si";
 import { FaGlobe } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
@@ -9,8 +11,27 @@ import { HiUsers } from "react-icons/hi2";
 import { IoIosRocket } from "react-icons/io";
 import Link from "next/link";
 import { FaCheckCircle } from "react-icons/fa";
+import { useEffect } from "react";
+import { usePathname } from "next/navigation";
 
 export default function Projects() {
+  const pathname = usePathname();
+
+  useEffect(() => {
+    const hash = window.location.hash?.substring(1); // use window.location here
+    if (hash) {
+      setTimeout(() => {
+        const el = document.getElementById(hash);
+        if (el) {
+          const yOffset = -60;
+          const y =
+            el.getBoundingClientRect().top + window.pageYOffset + yOffset;
+          window.scrollTo({ top: y, behavior: "smooth" });
+        }
+      }, 100); // small delay to ensure the section is rendered
+    }
+  }, [pathname]); // trigger when route changes
+
   const projects = [
     {
       name: "TeamBase",
@@ -36,6 +57,7 @@ export default function Projects() {
       ],
       liveDemo: "https://team-base-dd23.vercel.app/",
       githubrepo: "https://github.com/Izzeddin-Samara/TeamBase",
+      slug: "TeamBase",
     },
     {
       name: "TechNova",
@@ -60,6 +82,7 @@ export default function Projects() {
       ],
       liveDemo: "https://tech-nova-tawny.vercel.app/",
       githubrepo: "https://github.com/Izzeddin-Samara/TechNova",
+      slug: "TechNova",
     },
   ];
   return (
@@ -81,8 +104,8 @@ export default function Projects() {
           
           {/* Project card */}
           <div className="grid grid-cols-1 md:grid-cols-1">
-            {projects.map(({ name, icon, overview, screenshot, features, techstack, liveDemo, githubrepo }, index) => (
-              <div className="p-8 text-center dark:text-white bg-" key={index}>
+            {projects.map(({ name, icon, overview, screenshot, features, techstack, liveDemo, githubrepo, slug }, index) => (
+              <div className="p-8 text-center dark:text-white bg-" key={index} id={slug}>
                 <div className="mt-8 rounded-lg p-4 shadow-lg bg-purple-200  dark:bg-gray-700">
                   <h1 className="mt-8 flex items-center justify-center gap-2 text-4xl font-bold text-purple-700 dark:text-purple-500">
                     {icon}
