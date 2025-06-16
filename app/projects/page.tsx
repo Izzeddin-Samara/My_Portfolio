@@ -13,6 +13,7 @@ import Link from "next/link";
 import { FaCheckCircle } from "react-icons/fa";
 import { useEffect } from "react";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 
 export default function Projects() {
   const pathname = usePathname();
@@ -49,11 +50,14 @@ export default function Projects() {
         "Responsive and clean user interface",
       ],
       techstack: [
-        <FaReact size={60} color="#007acc" />,
-        <SiTypescript size={60} color="#007acc" />,
-        <RiTailwindCssFill size={60} color="#06b6d4" />,
-        <SiExpress size={60} color="black" />,
-        <SiMongodb size={60} color="#439934" />,
+        { id: "react", icon: <FaReact size={60} color="#007acc" /> },
+        { id: "ts", icon: <SiTypescript size={60} color="#007acc" /> },
+        {
+          id: "tailwind",
+          icon: <RiTailwindCssFill size={60} color="#06b6d4" />,
+        },
+        { id: "express", icon: <SiExpress size={60} color="black" /> },
+        { id: "mongodb", icon: <SiMongodb size={60} color="#439934" /> },
       ],
       liveDemo: "https://team-base-dd23.vercel.app/",
       githubrepo: "https://github.com/Izzeddin-Samara/TeamBase",
@@ -76,9 +80,12 @@ export default function Projects() {
         "Clean, intuitive layout — with a modern Navbar and Footer",
       ],
       techstack: [
-        <FaReact size={60} color="#007acc" />,
-        <SiTypescript size={60} color="#007acc" />,
-        <RiTailwindCssFill size={60} color="#06b6d4" />,
+        { id: "react", icon: <FaReact size={60} color="#007acc" /> },
+        { id: "ts", icon: <SiTypescript size={60} color="#007acc" /> },
+        {
+          id: "tailwind",
+          icon: <RiTailwindCssFill size={60} color="#06b6d4" />,
+        },
       ],
       liveDemo: "https://tech-nova-tawny.vercel.app/",
       githubrepo: "https://github.com/Izzeddin-Samara/TechNova",
@@ -90,10 +97,10 @@ export default function Projects() {
       <div className="dark:bg-gray-800">
         <div className="mx-auto min-h-screen max-w-7xl py-30">
           <div className="text-center">
-            <h1 className=" text-5xl font-bold text-purple-700 dark:text-purple-500">
+            <h1 className="text-5xl font-bold text-purple-700 dark:text-purple-500">
               Projects
             </h1>
-            <p className="text-justify mt-10 text-xl w-[90%] mx-auto dark:text-white" >
+            <p className="mx-auto mt-10 w-[90%] text-justify text-xl dark:text-white">
               Here you'll find a selection of the applications and websites I've
               built. Each project showcases my skills with modern technologies
               and my passion for creating clean, user-friendly experiences. Feel
@@ -101,87 +108,110 @@ export default function Projects() {
               can do
             </p>
           </div>
-          
+
           {/* Project card */}
           <div className="grid grid-cols-1 md:grid-cols-1">
-            {projects.map(({ name, icon, overview, screenshot, features, techstack, liveDemo, githubrepo, slug }, index) => (
-              <div className="p-8 text-center dark:text-white bg-" key={index} id={slug}>
-                <div className="mt-8 rounded-lg p-4 shadow-lg bg-purple-200  dark:bg-gray-700">
-                  <h1 className="mt-8 flex items-center justify-center gap-2 text-4xl font-bold text-purple-700 dark:text-purple-500">
-                    {icon}
-                    {name}
-                  </h1>
-                  <h3 className="mt-16 text-xl font-semibold">Overview:</h3>
-                  <div>
-                    <p className="mx-auto mt-8 w-3/4 text-justify text-gray-600 dark:text-gray-300">
-                      {overview}
-                    </p>
-                    <div className="mt-8">
-                      <img
-                        className="mx-auto w-full max-w-4xl rounded-lg shadow-xl"
-                        src={screenshot}
-                        alt=""
-                      />
-                    </div>
-                  </div>
-                  <div className="flex flex-col justify-center gap-16 md:flex-row">
+            {projects.map(
+              (
+                {
+                  name,
+                  icon,
+                  overview,
+                  screenshot,
+                  features,
+                  techstack,
+                  liveDemo,
+                  githubrepo,
+                  slug,
+                },
+                index,
+              ) => (
+                <div
+                  className="bg- p-8 text-center dark:text-white"
+                  key={index}
+                  id={slug}
+                >
+                  <div className="mt-8 rounded-lg bg-purple-200 p-4 shadow-lg dark:bg-gray-700">
+                    <h1 className="mt-8 flex items-center justify-center gap-2 text-4xl font-bold text-purple-700 dark:text-purple-500">
+                      {icon}
+                      {name}
+                    </h1>
+                    <h3 className="mt-16 text-xl font-semibold">Overview:</h3>
                     <div>
-                      <h3 className="mt-8 text-center text-xl font-semibold">
-                        Features:
-                      </h3>
-                      <ul className="mt-8 space-y-4 text-left">
-                        {features.map((feature, index) => (
-                          <li key={index} className="flex items-start gap-2">
-                            <FaCheckCircle
-                              className="mt-1 flex-shrink-0 text-green-600 dark:text-green-400"
-                              size={18}
-                            />
-                            <span className="text-sm sm:text-base">
-                              {feature}
-                            </span>
-                          </li>
-                        ))}
-                      </ul>
+                      <p className="mx-auto mt-8 w-3/4 text-justify text-gray-600 dark:text-gray-300">
+                        {overview}
+                      </p>
+                      <div className="mt-8">
+                        <Image
+                          width={800}
+                          height={400}
+                          className="mx-auto rounded-lg shadow-xl"
+                          src={`/${screenshot}`}
+                          alt={`${name} project screenshot`}
+                        />
+                      </div>
                     </div>
-                    <div>
-                      <h3 className="mt-8 text-xl font-semibold">Tech Stack</h3>
-                      <ul className="mt-8 flex flex-col items-center justify-center gap-8 md:flex-row">
-                        {techstack.map((stack, index) => (
-                          <li key={index}>{stack}</li>
-                        ))}
-                      </ul>
-                      <div className="mt-20 flex flex-col justify-center gap-4 md:flex-row">
-                        <a
-                          href={liveDemo}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <button
-                            type="button"
-                            className="flex w-full cursor-pointer items-center justify-center gap-2 rounded-lg bg-purple-700 p-4 text-xl text-white outline-none hover:bg-purple-800 hover:shadow-xl focus:ring-4 focus:ring-purple-300"
+                    <div className="flex flex-col justify-center gap-16 md:flex-row">
+                      <div>
+                        <h3 className="mt-8 text-center text-xl font-semibold">
+                          Features:
+                        </h3>
+                        <ul className="mt-8 space-y-4 text-left">
+                          {features.map((feature, index) => (
+                            <li key={index} className="flex items-start gap-2">
+                              <FaCheckCircle
+                                className="mt-1 flex-shrink-0 text-green-600 dark:text-green-400"
+                                size={18}
+                              />
+                              <span className="text-sm sm:text-base">
+                                {feature}
+                              </span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                      <div>
+                        <h3 className="mt-8 text-xl font-semibold">
+                          Tech Stack
+                        </h3>
+                        <ul className="mt-8 flex flex-col items-center justify-center gap-8 md:flex-row">
+                          {techstack.map((stack) => (
+                            <li key={stack.id}>{stack.icon}</li>
+                          ))}
+                        </ul>
+                        <div className="mt-20 flex flex-col justify-center gap-4 md:flex-row">
+                          <a
+                            href={liveDemo}
+                            target="_blank"
+                            rel="noopener noreferrer"
                           >
-                            Live Demo <FaGlobe size={25} />
-                          </button>
-                        </a>
+                            <button
+                              type="button"
+                              className="flex w-full cursor-pointer items-center justify-center gap-2 rounded-lg bg-purple-700 p-4 text-xl text-white outline-none hover:bg-purple-800 hover:shadow-xl focus:ring-4 focus:ring-purple-300"
+                            >
+                              Live Demo <FaGlobe size={25} />
+                            </button>
+                          </a>
 
-                        <a
-                          href={githubrepo}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <button
-                            type="button"
-                            className="flex w-full cursor-pointer items-center justify-center gap-2 rounded-lg bg-gray-800 p-4 text-xl text-white outline-none hover:bg-gray-950 hover:shadow-xl focus:ring-4 focus:ring-gray-300"
+                          <a
+                            href={githubrepo}
+                            target="_blank"
+                            rel="noopener noreferrer"
                           >
-                            View on GitHub <FaGithub size={25} />
-                          </button>
-                        </a>
+                            <button
+                              type="button"
+                              className="flex w-full cursor-pointer items-center justify-center gap-2 rounded-lg bg-gray-800 p-4 text-xl text-white outline-none hover:bg-gray-950 hover:shadow-xl focus:ring-4 focus:ring-gray-300"
+                            >
+                              View on GitHub <FaGithub size={25} />
+                            </button>
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              ),
+            )}
           </div>
           <div className="px-6 py-30 text-center">
             <h1 className="text-center text-2xl font-bold dark:text-white">
