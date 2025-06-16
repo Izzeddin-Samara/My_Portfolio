@@ -2,20 +2,22 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaEnvelope } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
+import { SiCalendly } from "react-icons/si";
+
 import Link from "next/link";
 
 export default function Footer() {
   return (
     <>
-      <footer className="bg-purple-200 p-4 dark:bg-gray-700">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <footer className=" bg-gray-200 p-4 dark:bg-gray-900">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
           <div>
-            <h1 className="text-xl font-bold text-purple-700 text-center md:text-left dark:text-purple-500">
+            <h1 className="text-center text-xl font-bold text-purple-700 md:text-left dark:text-purple-500">
               Izzeddin Samara
             </h1>
           </div>
           <div>
-            <ul className="flex flex-col md:flex-row items-center justify-center gap-6 dark:text-white">
+            <ul className="flex flex-col items-center justify-center gap-6 md:flex-row dark:text-white">
               <li>
                 <Link
                   className="border-b-2 border-transparent pb-0.5 text-sm transition-all hover:border-purple-700 dark:hover:border-purple-500"
@@ -61,13 +63,13 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <ul className="mt-1 flex justify-center md:justify-end gap-6 dark:text-white">
+            <ul className="mt-1 flex justify-center gap-6 md:justify-end dark:text-white">
               <li>
                 <a
                   href="https://github.com/Izzeddin-Samara"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-gray-500 dark:hover:text-gray-300"
+                  className="hover:text-purple-700 dark:hover:text-purple-400"
                 >
                   <FaGithub size={20} />
                 </a>
@@ -77,7 +79,7 @@ export default function Footer() {
                   href="https://www.linkedin.com/in/izzeddin-samara/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-gray-500 dark:hover:text-gray-300"
+                  className="hover:text-purple-700 dark:hover:text-purple-400"
                 >
                   <FaLinkedin size={20} />
                 </a>
@@ -87,9 +89,19 @@ export default function Footer() {
                   href="mailto:izzidinsamara@gmail.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-gray-500 dark:hover:text-gray-300"
+                  className="hover:text-purple-700 dark:hover:text-purple-400"
                 >
                   <FaEnvelope size={20} />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://calendly.com/izzidinsamara/30min?month=2025-06"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-gray-500 dark:hover:text-gray-300"
+                >
+                  <SiCalendly size={20} />
                 </a>
               </li>
               <li>
@@ -105,9 +117,9 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-        <hr className="my-6 border-purple-700 sm:mx-auto lg:my-2 dark:border-purple-500" />{" "}
+        <hr className="my-6 border-purple-700 sm:mx-auto lg:my-4 dark:border-purple-500" />{" "}
         <p className="mt-2 text-center text-xs text-gray-950 dark:text-white">
-          © Izzeddin Samara. All rights reserved.
+          © Izzeddin Samara 2025, All rights reserved.
         </p>
       </footer>
     </>
