@@ -12,7 +12,7 @@ export default function Skills() {
   return (
     <>
       <div className="dark:bg-gray-800">
-        <div className="mx-auto min-h-screen max-w-7xl py-30">
+        <div className="mx-auto min-h-screen max-w-7xl mt-40">
           <div className="px-6 text-gray-900 dark:bg-gray-800">
             <h1 className="mt-15 mb-10 text-center text-3xl font-bold text-purple-700 dark:text-purple-500">
               Skills & Technologies
