@@ -11,13 +11,13 @@ import { GrMysql } from "react-icons/gr";
 export default function Skills() {
   return (
     <>
-      <div className="dark:bg-gray-800">
+      <div>
         <div className="mx-auto min-h-screen max-w-7xl mt-40">
-          <div className="px-6 text-gray-900 dark:bg-gray-800">
-            <h1 className="mt-15 mb-10 text-center text-3xl font-bold text-purple-700 dark:text-purple-500">
+          <div className="px-6 text-gray-900">
+            <h1 className="mt-15 mb-10 text-center md:text-3xl text-2xl font-bold text-purple-700 dark:text-purple-500">
               Skills & Technologies
             </h1>
-            <p className="mb-4 text-center text-justify text-xl dark:text-white">
+            <p className="mb-4 text-center text-justify text-xl dark:text-white leading-loose">
               I’m passionate about crafting clean, efficient, and scalable web
               applications using a variety of tools and technologies. Below are
               the key languages, frameworks, databases, and tools I work with
@@ -137,18 +137,18 @@ export default function Skills() {
               </ul>
             </div>
           </div>
-          <div className="px-6 py-10 text-gray-900 dark:bg-gray-800">
-            <h1 className="mt-15 mb-10 text-center text-3xl font-bold text-purple-700 dark:text-purple-500">
+          <div className="px-6 py-10 text-gray-900">
+            <h1 className="mt-15 mb-10 text-center md:text-3xl text-2xl font-bold text-purple-700 dark:text-purple-500">
               Soft Skills & Strengths
             </h1>
-            <p className="mb-4 text-center text-justify text-xl dark:text-white">
+            <p className="mb-8 text-center text-justify md:text-xl text-lg dark:text-white leading-loose">
               Beyond technical skills, I believe that effective communication,
               strong problem-solving abilities, and teamwork are the
               cornerstones of successful software development. I take pride in
               clearly articulating ideas and actively listening to teammates and
               clients to ensure alignment and understanding.
             </p>
-            <p className="mb-4 text-center text-justify text-xl dark:text-white">
+            <p className="mb-8 text-center text-justify md:text-xl text-lg dark:text-white leading-loose">
               I excel at breaking down complex problems into manageable steps
               and approaching challenges with a positive, solution-oriented
               mindset. Collaboration energizes me — I enjoy contributing to a
@@ -157,7 +157,7 @@ export default function Skills() {
               key strengths of mine, allowing me to balance multiple tasks and
               deadlines without compromising quality
             </p>
-            <p className="mb-4 text-center text-justify text-xl dark:text-white">
+            <p className="mb-8 text-center text-justify md:text-xl text-lg dark:text-white leading-loose">
               In addition, I’m adaptable and open-minded, ready to take
               constructive feedback and continuously improve both my technical
               and interpersonal skills. These soft skills enable me to work
@@ -166,24 +166,24 @@ export default function Skills() {
             </p>
           </div>
 
-          <div className="px-6 text-gray-900 dark:bg-gray-800">
-            <h1 className="mt-15 mb-10 text-center text-3xl font-bold text-purple-700 dark:text-purple-500">
+          <div className="px-6 text-gray-900">
+            <h1 className="mt-15 mb-10 text-center md:text-3xl text-2xl font-bold text-purple-700 dark:text-purple-500">
               Continuous Learning
             </h1>
-            <p className="mb-4 text-center text-justify text-xl dark:text-white">
+            <p className="mb-8 text-center text-justify md:text-xl text-lg dark:text-white leading-loose">
               The tech landscape is constantly evolving, and staying current is
               critical to remaining effective and innovative as a developer. I
               am deeply committed to lifelong learning and embrace every
               opportunity to expand my knowledge and expertise
             </p>
-            <p className="mb-4 text-center text-justify text-xl dark:text-white">
+            <p className="mb-8 text-center text-justify md:text-xl text-lg dark:text-white leading-loose">
               Whether it’s through reading official documentation, experimenting
               with new tools and libraries, or engaging with the developer
               community, I stay proactive in sharpening my skills. I regularly
               follow blogs, tutorials, and courses to understand best practices
               and emerging trends
             </p>
-            <p className="mb-4 text-center text-justify text-xl dark:text-white">
+            <p className="mb-8 text-center text-justify md:text-xl text-lg dark:text-white leading-loose">
               I also believe hands-on experience is invaluable — I enjoy
               building side projects that challenge me to apply new concepts and
               technologies in real-world contexts. This ongoing learning mindset
@@ -192,16 +192,16 @@ export default function Skills() {
             </p>
           </div>
           <div className="px-6 py-20 text-center">
-            <h1 className="text-center text-2xl font-bold dark:text-white">
+            <h1 className="text-center md:text-2xl text-md font-bold dark:text-white">
               Need a frontend developer who can turn ideas into clean,
               responsive, and modern interfaces?
             </h1>
-            <p className="mt-8 text-center text-xl dark:text-white">
+            <p className="mt-4 md:mt-8 text-center md:text-xl text-sm dark:text-white">
               Let’s build something awesome together.
             </p>
 
             <Link href="/contact">
-              <button className="mt-8 cursor-pointer rounded-lg bg-purple-700 p-4 text-2xl text-white outline-none hover:bg-purple-800 focus:ring-4 focus:ring-purple-300">
+              <button className="mt-4 md:mt-8 cursor-pointer rounded-lg bg-purple-700 p-4 md:text-2xl text-sm text-white outline-none hover:bg-purple-800 focus:ring-4 focus:ring-purple-300">
                 Contact Me Now!
               </button>
             </Link>
