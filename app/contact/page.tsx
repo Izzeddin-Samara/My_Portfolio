@@ -111,7 +111,7 @@ export default function Contact() {
             setError("");
             setFormData({ name: "", email: "", message: "" });
             setErrors({ name: "", email: "", message: "" });
-          }, 5000);
+          }, 2000);
         } else {
           setError("Failed to send message. Please try again later.");
           setSuccess("");
