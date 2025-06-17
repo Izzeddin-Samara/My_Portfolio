@@ -4,6 +4,13 @@ import InputField from "@/components/InputField";
 import { Button, Modal, ModalBody, ModalFooter } from "flowbite-react";
 import { Spinner } from "flowbite-react";
 import { FaCheckCircle } from "react-icons/fa";
+import emailjs from "emailjs-com";
+
+const SERVICE_ID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!;
+const TEMPLATE_ID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!;
+const AUTORESPONSE_TEMPLATE =
+  process.env.NEXT_PUBLIC_EMAILJS_AUTORESPONSE_TEMPLATE!;
+const PUBLIC_KEY = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!;
 
 type formData = {
   name: string;
@@ -106,6 +113,29 @@ export default function Contact() {
         const data = await res.json();
 
         if (data.success) {
+          // 2. Send email to Portfolio Owner
+          await emailjs.send(
+            SERVICE_ID,
+            TEMPLATE_ID,
+            {
+              from_name: formData.name,
+              from_email: formData.email,
+              message: formData.message,
+            },
+            PUBLIC_KEY,
+          );
+
+          // 3. Auto-response to sender
+          await emailjs.send(
+            SERVICE_ID,
+            AUTORESPONSE_TEMPLATE,
+            {
+              from_name: formData.name,
+              to_email: formData.email,
+            },
+            PUBLIC_KEY,
+          );
+
           setTimeout(() => {
             setModalContent("success");
             setError("");
