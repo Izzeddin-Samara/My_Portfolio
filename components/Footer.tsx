@@ -9,7 +9,7 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <>
-      <footer className=" bg-gray-200 p-4 dark:bg-gray-900">
+      <footer className="bg-gray-200 p-4 dark:bg-gray-800">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
           <div>
             <h1 className="text-center text-xl font-bold text-purple-700 md:text-left dark:text-purple-500">
@@ -99,7 +99,7 @@ export default function Footer() {
                   href="https://calendly.com/izzidinsamara/30min?month=2025-06"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-gray-500 dark:hover:text-gray-300"
+                  className="hover:text-purple-700 dark:hover:text-purple-400"
                 >
                   <SiCalendly size={20} />
                 </a>
@@ -109,7 +109,7 @@ export default function Footer() {
                   href="https://api.whatsapp.com/send/?phone=00972595484832&text&type=phone_number&app_absent=0"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-gray-500 dark:hover:text-gray-300"
+                  className="hover:text-purple-700 dark:hover:text-purple-400"
                 >
                   <FaWhatsapp size={20} />
                 </a>
