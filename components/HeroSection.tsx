@@ -27,10 +27,10 @@ export default function HeroSection() {
                 React, TypeScript, and Tailwind CSS. I build modern, responsive,
                 and accessible web applications
               </p>
-              <div className="mt-10 flex justify-center gap-4">
+              <div className="mt-10 flex justify-center gap-2">
                 <button
                   type="button"
-                  className="flex cursor-pointer items-center gap-2 rounded-lg bg-purple-700 p-3 text-lg text-white outline-none hover:bg-purple-800 focus:ring-4 focus:ring-purple-300"
+                  className="flex cursor-pointer items-center gap-2 rounded-lg bg-purple-700 p-3 md:text-lg text-sm text-white outline-none hover:bg-purple-800 focus:ring-4 focus:ring-purple-300"
                 >
                   Download CV <FaDownload size={20} />
                 </button>
@@ -38,7 +38,7 @@ export default function HeroSection() {
                 <Link href="/contact">
                   <button
                     type="button"
-                    className="flex cursor-pointer items-center gap-2 rounded-lg bg-gray-500 p-4 text-xl text-white outline-none hover:bg-gray-600 focus:ring-4 focus:ring-gray-300"
+                    className="flex cursor-pointer items-center gap-2 rounded-lg bg-gray-500 p-4 md:text-lg text-sm text-white outline-none hover:bg-gray-600 focus:ring-4 focus:ring-gray-300"
                   >
                     Contact me <IoSend size={25} />
                   </button>
