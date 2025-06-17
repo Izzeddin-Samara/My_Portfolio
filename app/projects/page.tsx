@@ -36,7 +36,7 @@ export default function Projects() {
   const projects = [
     {
       name: "TeamBase",
-      icon: <HiUsers size={50} />,
+      icon: <HiUsers className="text-3xl md:text-5xl" />,
       overview:
         "TeamBase is a web application for managing team member information. It includes login and registration, and lets users add, edit, delete, and search employee records.",
       screenshot: "TeamBase.jpg",
@@ -94,13 +94,13 @@ export default function Projects() {
   ];
   return (
     <>
-      <div className="dark:bg-gray-800">
+      <div>
         <div className="mx-auto min-h-screen max-w-7xl py-30">
           <div className="text-center">
-            <h1 className="text-5xl font-bold text-purple-700 dark:text-purple-500">
+            <h1 className="text-2xl md:text-3xl font-bold text-purple-700 dark:text-purple-500">
               Projects
             </h1>
-            <p className="mx-auto mt-10 w-[90%] text-justify text-xl dark:text-white">
+            <p className="mx-auto mt-10 w-[90%] text-justify md:text-xl text-md leading-loose dark:text-white">
               Here you&rsquo;ll find a selection of the applications and websites I&rsquo;ve
               built. Each project showcases my skills with modern technologies
               and my passion for creating clean, user-friendly experiences. Feel
@@ -127,18 +127,18 @@ export default function Projects() {
                 index,
               ) => (
                 <div
-                  className="bg- p-8 text-center dark:text-white"
+                  className="bg- p-4 text-center dark:text-white"
                   key={index}
                   id={slug}
                 >
                   <div className="mt-8 rounded-lg bg-purple-200 p-4 shadow-lg dark:bg-gray-700">
-                    <h1 className="mt-8 flex items-center justify-center gap-2 text-4xl font-bold text-purple-700 dark:text-purple-500">
+                    <h1 className="mt-8 flex items-center justify-center gap-2 md:text-5xl text-3xl font-bold text-purple-700 dark:text-purple-500">
                       {icon}
                       {name}
                     </h1>
-                    <h3 className="mt-16 text-xl font-semibold">Overview:</h3>
+                    <h3 className="mt-16 text-lg font-semibold">Overview:</h3>
                     <div>
-                      <p className="mx-auto mt-8 w-3/4 text-justify text-gray-600 dark:text-gray-300">
+                      <p className="mx-auto mt-8  text-justify text-gray-600 dark:text-gray-300 p-4">
                         {overview}
                       </p>
                       <div className="mt-8">
@@ -174,7 +174,7 @@ export default function Projects() {
                         <h3 className="mt-8 text-xl font-semibold">
                           Tech Stack
                         </h3>
-                        <ul className="mt-8 flex flex-col items-center justify-center gap-8 md:flex-row">
+                        <ul className="mt-8 flex md:flex-row flex-wrap md:flex-nowrap items-center justify-center gap-8 md:flex-row">
                           {techstack.map((stack) => (
                             <li key={stack.id}>{stack.icon}</li>
                           ))}
@@ -187,7 +187,7 @@ export default function Projects() {
                           >
                             <button
                               type="button"
-                              className="flex w-full cursor-pointer items-center justify-center gap-2 rounded-lg bg-purple-700 p-4 text-xl text-white outline-none hover:bg-purple-800 hover:shadow-xl focus:ring-4 focus:ring-purple-300"
+                              className="flex w-full cursor-pointer items-center justify-center gap-2 rounded-lg bg-purple-700 p-4 md:text-xl text-sm text-white outline-none hover:bg-purple-800 hover:shadow-xl focus:ring-4 focus:ring-purple-300"
                             >
                               Live Demo <FaGlobe size={25} />
                             </button>
@@ -200,7 +200,7 @@ export default function Projects() {
                           >
                             <button
                               type="button"
-                              className="flex w-full cursor-pointer items-center justify-center gap-2 rounded-lg bg-gray-800 p-4 text-xl text-white outline-none hover:bg-gray-950 hover:shadow-xl focus:ring-4 focus:ring-gray-300"
+                              className="flex w-full cursor-pointer items-center justify-center gap-2 rounded-lg bg-gray-800 p-4 md:text-xl text-sm text-white outline-none hover:bg-gray-950 hover:shadow-xl focus:ring-4 focus:ring-gray-300"
                             >
                               View on GitHub <FaGithub size={25} />
                             </button>
@@ -214,17 +214,17 @@ export default function Projects() {
             )}
           </div>
           <div className="px-6 py-30 text-center">
-            <h1 className="text-center text-2xl font-bold dark:text-white">
+            <h1 className="text-center md:text-2xl  text-lg font-bold dark:text-white">
               Have a creative idea, business need, or technical challenge that
               needs a smart solution?
             </h1>
-            <p className="mt-8 text-center text-lg dark:text-white">
+            <p className="mt-8 text-center text-sm md:text-xl dark:text-white">
               Let’s work together to build something that’s smart, scalable, and
               beautifully designed.
             </p>
 
             <Link href="/contact">
-              <button className="mt-8 cursor-pointer rounded-lg bg-purple-700 p-4 text-2xl text-white outline-none hover:bg-purple-800 focus:ring-4 focus:ring-purple-300">
+              <button className="mt-8 cursor-pointer rounded-lg bg-purple-700 p-4 text-sm md:text-2xl text-white outline-none hover:bg-purple-800 focus:ring-4 focus:ring-purple-300">
                 Contact Me Now!
               </button>
             </Link>
