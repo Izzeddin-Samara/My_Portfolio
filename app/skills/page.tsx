@@ -17,7 +17,7 @@ export default function Skills() {
             <h1 className="mt-15 mb-10 text-center md:text-3xl text-2xl font-bold text-purple-700 dark:text-purple-500">
               Skills & Technologies
             </h1>
-            <p className="mb-4 text-center text-justify text-xl dark:text-white leading-loose">
+            <p className="mb-4 text-center text-justify md:text-xl text-lg dark:text-white leading-loose">
               I’m passionate about crafting clean, efficient, and scalable web
               applications using a variety of tools and technologies. Below are
               the key languages, frameworks, databases, and tools I work with
