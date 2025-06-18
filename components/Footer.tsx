@@ -9,7 +9,7 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <>
-      <footer className="bg-gray-200 p-4 dark:bg-gray-800">
+      <footer className="bg-purple-200 p-4 dark:bg-gray-800">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
           <div>
             <h1 className="text-center text-xl font-bold text-purple-700 md:text-left dark:text-purple-500">
