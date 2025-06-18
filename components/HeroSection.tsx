@@ -3,8 +3,6 @@ import Link from "next/link";
 import { FaDownload } from "react-icons/fa";
 import { PiHandWavingFill } from "react-icons/pi";
 
-
-
 export default function HeroSection() {
   return (
     <>
@@ -19,18 +17,25 @@ export default function HeroSection() {
               />{" "}
             </div>
             <div className="mt-10 w-full text-center">
-              <h1 className="mx-auto text-4xl flex items-center gap-2 justify-center leading-tight font-bold lg:text-5xl dark:text-white">
-                Hi, I&rsquo;m Izzeddin <PiHandWavingFill className="wave mb-4 text-purple-700"  size={70}/>
+              <h1 className="mx-auto flex items-center justify-center gap-2 text-2xl leading-tight font-bold md:text-5xl dark:text-white">
+                Hi, I&rsquo;m Izzeddin{" "}
+                <PiHandWavingFill
+                  className="wave mb-4 text-purple-700 text-4xl md:text-7xl"
+                />
               </h1>
-              <p className="text-md mx-auto mt-12 text-justify text-lg text-gray-600 lg:text-xl dark:text-gray-300">
-                A passionate <span className="dark:text-purple-500 text-purple-700 font-bold">Frontend Developer</span> specializing in
-                React, TypeScript, and Tailwind CSS. I build modern, responsive,
-                and accessible web applications
+              <p className="text-md mx-auto mt-12 text-justify text-lg lg:text-xl dark:text-white">
+                A passionate{" "}
+                <span className="font-bold text-purple-700 dark:text-purple-500">
+                  Frontend Developer
+                </span>{" "}
+                specializing in React, TypeScript, and Tailwind CSS. I craft
+                modern, responsive, and accessible web applications with a focus
+                on clean design, and seamless user experiences.
               </p>
               <div className="mt-10 flex justify-center gap-2">
                 <button
                   type="button"
-                  className="flex cursor-pointer items-center gap-2 rounded-lg bg-purple-700 p-3 md:text-lg text-sm text-white outline-none hover:bg-purple-800 focus:ring-4 focus:ring-purple-300"
+                  className="flex cursor-pointer items-center gap-2 rounded-lg bg-purple-700 p-3 text-sm text-white outline-none hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 md:text-lg"
                 >
                   Download CV <FaDownload size={20} />
                 </button>
@@ -38,7 +43,7 @@ export default function HeroSection() {
                 <Link href="/contact">
                   <button
                     type="button"
-                    className="flex cursor-pointer items-center gap-2 rounded-lg bg-gray-500 p-4 md:text-lg text-sm text-white outline-none hover:bg-gray-600 focus:ring-4 focus:ring-gray-300"
+                    className="flex cursor-pointer items-center gap-2 rounded-lg bg-gray-500 p-4 text-sm text-white outline-none hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 md:text-lg"
                   >
                     Contact me <IoSend size={25} />
                   </button>
