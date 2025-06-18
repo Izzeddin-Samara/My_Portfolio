@@ -18,7 +18,7 @@ export default function WhatDrivesMe() {
             eager to explore new tools, sharpen my craft, and turn ideas into
             real, user-friendly solutions.
           </p>
-            <p className="mt-8 mb-10 text-xl leading-loose dark:text-white">
+            <p className="mt-8 mb-10 md:text-xl text-sm leading-loose dark:text-white">
               Want to know more about my journey and what I’m working toward?{" "}
               <Link
                 className="text-md ml-2 border-b-4 border-purple-700 font-bold text-purple-700 transition-all hover:border-transparent dark:border-purple-500 dark:text-purple-500 dark:hover:border-transparent"
