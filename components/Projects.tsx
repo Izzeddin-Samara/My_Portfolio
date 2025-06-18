@@ -64,7 +64,7 @@ export default function Projects() {
               ({ name, icon, overview, techstack, slug }, index) => (
                 <div
                   key={index}
-                  className="space-y-10 md:w-[90%] mx-auto rounded-lg bg-purple-200 p-8 text-center shadow-xl dark:bg-gray-700 dark:text-white"
+                  className="space-y-10 md:w-[90%] mx-auto rounded-lg bg-purple-300 p-8 text-center shadow-xl dark:bg-gray-700 dark:text-white"
                 >
                   <h1 className=" flex items-center justify-center gap-2 text-2xl font-bold text-purple-700 md:text-3xl dark:text-purple-600">
                     {icon}
