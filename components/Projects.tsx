@@ -12,38 +12,38 @@ export default function Projects() {
     {
       name: "TeamBase",
       icon: (
-        <HiUsers className="text-2xl text-purple-700 md:text-5xl lg:text-6xl" />
+        <HiUsers className="text-2xl text-purple-700 md:text-3xl" />
       ),
       overview:
         "A full-stack team management app with CRUD, login, and real-time search features.",
 
       techstack: [
-        { id: "react", icon: <FaReact size={60} color="#007acc" /> },
-        { id: "ts", icon: <SiTypescript size={60} color="#007acc" /> },
+        { id: "react", icon: <FaReact className="text-2xl md:text-4xl" color="#007acc" /> },
+        { id: "ts", icon: <SiTypescript className="text-2xl md:text-4xl" color="#007acc" /> },
         {
           id: "tailwind",
-          icon: <RiTailwindCssFill size={60} color="#06b6d4" />,
+          icon: <RiTailwindCssFill className="text-2xl md:text-4xl" color="#06b6d4" />,
         },
-        { id: "express", icon: <SiExpress size={60} color="black" /> },
-        { id: "mongodb", icon: <SiMongodb size={60} color="#439934" /> },
+        { id: "express", icon: <SiExpress className="text-2xl md:text-4xl" color="black" /> },
+        { id: "mongodb", icon: <SiMongodb className="text-2xl md:text-4xl" color="#439934" /> },
       ],
       slug: "TeamBase",
     },
     {
       name: "TechNova",
       icon: (
-        <IoIosRocket className="text-2xl text-purple-700 md:text-5xl lg:text-6xl" />
+        <IoIosRocket className="text-2xl text-purple-700 md:text-3xl" />
       ),
 
       overview:
         "Technova is a modern software services website, offering a range of digital solutions",
 
       techstack: [
-        { id: "react", icon: <FaReact size={60} color="#007acc" /> },
-        { id: "ts", icon: <SiTypescript size={60} color="#007acc" /> },
+        { id: "react", icon: <FaReact className="text-2xl md:text-4xl" color="#007acc" /> },
+        { id: "ts", icon: <SiTypescript className="text-2xl md:text-4xl" color="#007acc" /> },
         {
           id: "tailwind",
-          icon: <RiTailwindCssFill size={60} color="#06b6d4" />,
+          icon: <RiTailwindCssFill className="text-2xl md:text-4xl" color="#06b6d4" />,
         },
       ],
       slug: "TechNova",
@@ -56,7 +56,7 @@ export default function Projects() {
           <h1 className="mb-8 text-center text-4xl font-bold text-purple-700 dark:text-purple-500">
             Projects
           </h1>
-          <p className="mb-4 text-center text-xl dark:text-white">
+          <p className="mb-4 text-center text-lg dark:text-white">
             Here are some of major projects I&rsquo;ve worked on recently!
           </p>
           <div className="grid grid-cols-1 gap-10 p-4 md:grid-cols-2">
@@ -66,7 +66,7 @@ export default function Projects() {
                   key={index}
                   className="space-y-10 rounded-lg bg-purple-200 p-8 text-center shadow-xl dark:bg-gray-700 dark:text-white"
                 >
-                  <h1 className="flex items-center justify-center gap-2 text-2xl font-bold text-purple-700 md:text-4xl dark:text-purple-600">
+                  <h1 className=" bg-purple-200 flex items-center justify-center gap-2 text-2xl font-bold text-purple-700 md:text-3xl dark:text-purple-600">
                     {icon}
                     {name}
                   </h1>
@@ -81,7 +81,7 @@ export default function Projects() {
                     ))}
                   </ul>
                   <Link href={`/projects#${slug}`}>
-                    <button className="w-2/4 cursor-pointer rounded-lg bg-purple-700 p-4 text-sm font-bold text-white shadow-xl outline-none hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 dark:bg-purple-600 dark:hover:bg-purple-700">
+                    <button className="w-48 cursor-pointer rounded-lg bg-purple-700 p-4 text-md md:text-xl font-bold text-white shadow-xl outline-none hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 dark:bg-purple-600 dark:hover:bg-purple-700">
                       Learn more
                     </button>
                   </Link>
