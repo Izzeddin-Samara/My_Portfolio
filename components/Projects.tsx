@@ -18,14 +18,14 @@ export default function Projects() {
         "A full-stack team management app with CRUD, login, and real-time search features.",
 
       techstack: [
-        { id: "react", icon: <FaReact className="text-2xl md:text-4xl" color="#007acc" /> },
-        { id: "ts", icon: <SiTypescript className="text-2xl md:text-4xl" color="#007acc" /> },
+        { id: "react", icon: <FaReact className="text-3xl md:text-4xl" color="#007acc" /> },
+        { id: "ts", icon: <SiTypescript className="text-3xl md:text-4xl" color="#007acc" /> },
         {
           id: "tailwind",
-          icon: <RiTailwindCssFill className="text-2xl md:text-4xl" color="#06b6d4" />,
+          icon: <RiTailwindCssFill className="text-3xl md:text-4xl" color="#06b6d4" />,
         },
-        { id: "express", icon: <SiExpress className="text-2xl md:text-4xl" color="black" /> },
-        { id: "mongodb", icon: <SiMongodb className="text-2xl md:text-4xl" color="#439934" /> },
+        { id: "express", icon: <SiExpress className="text-3xl md:text-4xl" color="black" /> },
+        { id: "mongodb", icon: <SiMongodb className="text-3xl md:text-4xl" color="#439934" /> },
       ],
       slug: "TeamBase",
     },
@@ -39,11 +39,11 @@ export default function Projects() {
         "Technova is a modern software services website, offering a range of digital solutions",
 
       techstack: [
-        { id: "react", icon: <FaReact className="text-2xl md:text-4xl" color="#007acc" /> },
-        { id: "ts", icon: <SiTypescript className="text-2xl md:text-4xl" color="#007acc" /> },
+        { id: "react", icon: <FaReact className="text-3xl md:text-4xl" color="#007acc" /> },
+        { id: "ts", icon: <SiTypescript className="text-3xl md:text-4xl" color="#007acc" /> },
         {
           id: "tailwind",
-          icon: <RiTailwindCssFill className="text-2xl md:text-4xl" color="#06b6d4" />,
+          icon: <RiTailwindCssFill className="text-3xl md:text-4xl" color="#06b6d4" />,
         },
       ],
       slug: "TechNova",
@@ -59,14 +59,14 @@ export default function Projects() {
           <p className="mb-4 text-center text-lg dark:text-white">
             Here are some of major projects I&rsquo;ve worked on recently!
           </p>
-          <div className="grid grid-cols-1 gap-10 p-4 md:grid-cols-2">
+          <div className="grid grid-cols-1 gap-5 p-4 md:grid-cols-2">
             {projects.map(
               ({ name, icon, overview, techstack, slug }, index) => (
                 <div
                   key={index}
-                  className="space-y-10 rounded-lg bg-purple-200 p-8 text-center shadow-xl dark:bg-gray-700 dark:text-white"
+                  className="space-y-10 md:w-[90%] mx-auto rounded-lg bg-purple-200 p-8 text-center shadow-xl dark:bg-gray-700 dark:text-white"
                 >
-                  <h1 className=" bg-purple-200 flex items-center justify-center gap-2 text-2xl font-bold text-purple-700 md:text-3xl dark:text-purple-600">
+                  <h1 className=" flex items-center justify-center gap-2 text-2xl font-bold text-purple-700 md:text-3xl dark:text-purple-600">
                     {icon}
                     {name}
                   </h1>
@@ -81,7 +81,7 @@ export default function Projects() {
                     ))}
                   </ul>
                   <Link href={`/projects#${slug}`}>
-                    <button className="w-48 cursor-pointer rounded-lg bg-purple-700 p-4 text-md md:text-xl font-bold text-white shadow-xl outline-none hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 dark:bg-purple-600 dark:hover:bg-purple-700">
+                    <button className="md:w-[60%] w-[80%]  cursor-pointer rounded-lg bg-purple-700 p-4 text-md md:text-xl font-bold text-white shadow-xl outline-none hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 dark:bg-purple-600 dark:hover:bg-purple-700">
                       Learn more
                     </button>
                   </Link>
