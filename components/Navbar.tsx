@@ -18,9 +18,12 @@ export default function Navbar() {
     <>
       <nav className="fixed z-50 w-full dark:bg-gray-800 bg-purple-200">
         <div className="mx-auto mt-4 flex h-16 max-w-[100%] items-center justify-between p-4">
-          <h1 className="text-2xl font-bold text-purple-700 lg:text-4xl dark:text-purple-500">
-            Izzeddin Samara
-          </h1>
+          <Link href="/">
+            <h1 className="text-2xl font-bold text-purple-700 lg:text-4xl dark:text-purple-500">
+              Izzeddin Samara
+            </h1>
+          </Link>
+
           <ul className="hidden items-center space-x-8 lg:flex dark:text-white">
             <li>
               <Link
@@ -79,7 +82,7 @@ export default function Navbar() {
                     : ""
                 }`}
               >
-                Projects 
+                Projects
               </Link>
             </li>
             <li>
