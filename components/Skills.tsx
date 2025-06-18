@@ -12,10 +12,12 @@ export default function Skills() {
   return (
     <>
       <div className="mt-15 space-y-15 text-center">
-        <h1 className="text-4xl font-bold text-purple-700 dark:text-purple-500">Skills and Technologies</h1>
+        <h1 className="text-4xl font-bold text-purple-700 dark:text-purple-500">
+          Skills and Technologies
+        </h1>
         <div>
           <h1 className="text-2xl font-bold dark:text-white">Languages</h1>
-          <ul className="mt-8 flex flex-col items-center justify-center gap-8 md:flex-row">
+          <ul className="mt-8 flex flex-wrap items-center justify-center gap-8 md:flex-row md:flex-nowrap">
             <li>
               <FaHtml5 size={60} color="#ff6d00" />
             </li>
@@ -41,7 +43,7 @@ export default function Skills() {
           <h1 className="mt-8 text-2xl font-bold dark:text-white">
             Frameworks/Libraries
           </h1>
-          <ul className="mt-8 flex flex-col items-center justify-center gap-8 md:flex-row">
+          <ul className="mt-8 flex flex-wrap items-center justify-center gap-8 md:flex-row md:flex-nowrap">
             <li>
               <SiDjango className="dark:text-white" size={60} />
             </li>
@@ -73,7 +75,7 @@ export default function Skills() {
         </div>
         <div>
           <h1 className="mt-8 text-2xl font-bold dark:text-white">Databases</h1>
-          <ul className="mt-8 flex flex-col items-center justify-center gap-8 md:flex-row">
+          <ul className="mt-8 flex flex-wrap items-center justify-center gap-8 md:flex-row md:flex-nowrap">
             <li>
               <GrMysql
                 className="text-[oklch(0.44_0.08_246.3)] dark:text-white"
@@ -91,7 +93,7 @@ export default function Skills() {
         </div>
         <div>
           <h1 className="mt-8 text-2xl font-bold dark:text-white">Tools</h1>
-          <ul className="mt-8 flex flex-col items-center justify-center gap-8 md:flex-row">
+          <ul className="mt-8 flex flex-wrap items-center justify-center gap-8 md:flex-row md:flex-nowrap">
             <li>
               <img
                 height={60}
@@ -121,7 +123,15 @@ export default function Skills() {
             </li>
           </ul>
         </div>
-        <p className="mt-8 text-sm md:text-xl leading-loose dark:text-white mb-10">Want to know more about my Skills set? <Link className="border-b-4 dark:text-purple-500 hover:border-transparent  text-md transition-all border-purple-700 dark:border-purple-500 dark:hover:border-transparent text-purple-700  ml-2  font-bold" href="/skills">Learn more</Link></p>
+          <p className="mt-8 mb-10 text-sm leading-loose md:text-xl dark:text-white">
+            Want to know more about my Skills set?{" "}
+            <Link
+              className="text-md ml-2 border-b-4 border-purple-700 font-bold text-purple-700 transition-all hover:border-transparent dark:border-purple-500 dark:text-purple-500 dark:hover:border-transparent"
+              href="/skills"
+            >
+              Learn more
+            </Link>
+          </p>
       </div>
     </>
   );
