@@ -6,6 +6,7 @@ import { SiDjango } from "react-icons/si";
 import { SiExpress } from "react-icons/si";
 import { FaJsSquare } from "react-icons/fa";
 import { GrMysql } from "react-icons/gr";
+import { RiNextjsFill } from "react-icons/ri";
 import Link from "next/link";
 
 export default function Skills() {
@@ -53,6 +54,9 @@ export default function Skills() {
                 width={60}
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
               />
+            </li>
+            <li>
+              <RiNextjsFill className="dark:text-white" size={60} />
             </li>
             <li>
               <SiExpress className="dark:text-white" size={60} />
