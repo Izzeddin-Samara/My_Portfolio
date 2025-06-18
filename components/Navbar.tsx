@@ -16,7 +16,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="fixed z-50 w-full dark:bg-gray-800 bg-purple-100">
+      <nav className="fixed z-50 w-full dark:bg-gray-800 bg-purple-200">
         <div className="mx-auto mt-4 flex h-16 max-w-[100%] items-center justify-between p-4">
           <h1 className="text-2xl font-bold text-purple-700 lg:text-4xl dark:text-purple-500">
             Izzeddin Samara
