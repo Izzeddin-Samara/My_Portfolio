@@ -28,7 +28,7 @@ export default function Skills() {
           <div className="mt-15 space-y-15 text-center">
             <div>
               <h1 className="text-2xl font-bold dark:text-white">Languages</h1>
-              <ul className="mt-8 flex flex-col items-center justify-center gap-8 md:flex-row">
+              <ul className="mt-8 flex flex-wrap md:flex-nowrap items-center justify-center gap-8 md:flex-row">
                 <li>
                   <FaHtml5 size={60} color="#ff6d00" />
                 </li>
@@ -54,7 +54,7 @@ export default function Skills() {
               <h1 className="mt-8 text-2xl font-bold dark:text-white">
                 Frameworks/Libraries
               </h1>
-              <ul className="mt-8 flex flex-col items-center justify-center gap-8 md:flex-row">
+              <ul className="mt-8 flex flex-wrap md:flex-nowrap items-center justify-center gap-8 md:flex-row">
                 <li>
                   <SiDjango className="dark:text-white" size={60} />
                 </li>
@@ -88,7 +88,7 @@ export default function Skills() {
               <h1 className="mt-8 text-2xl font-bold dark:text-white">
                 Databases
               </h1>
-              <ul className="mt-8 flex flex-col items-center justify-center gap-8 md:flex-row">
+              <ul className="mt-8 flex flex-wrap md:flex-nowrap items-center justify-center gap-8 md:flex-row">
                 <li>
                   <GrMysql
                     className="text-[oklch(0.44_0.08_246.3)] dark:text-white"
@@ -106,7 +106,7 @@ export default function Skills() {
             </div>
             <div>
               <h1 className="mt-8 text-2xl font-bold dark:text-white">Tools</h1>
-              <ul className="mt-8 flex flex-col items-center justify-center gap-8 md:flex-row">
+              <ul className="mt-8 flex flex-wrap md:flex-nowrap items-center justify-center gap-8 md:flex-row">
                 <li>
                   <img
                     height={60}
@@ -192,7 +192,7 @@ export default function Skills() {
             </p>
           </div>
           <div className="px-6 py-20 text-center">
-            <h1 className="text-center md:text-2xl text-md font-bold dark:text-white">
+            <h1 className="text-center md:text-2xl text-md font-bold dark:text-white text-justify">
               Need a frontend developer who can turn ideas into clean,
               responsive, and modern interfaces?
             </h1>
