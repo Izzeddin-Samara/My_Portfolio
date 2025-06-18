@@ -36,7 +36,7 @@ export default function Projects() {
   const projects = [
     {
       name: "TeamBase",
-      icon: <HiUsers className="text-3xl md:text-5xl" />,
+      icon: <HiUsers className="text-2xl md:text-3xl" />,
       overview:
         "TeamBase is a web application for managing team member information. It includes login and registration, and lets users add, edit, delete, and search employee records.",
       screenshot: "TeamBase.jpg",
@@ -65,7 +65,7 @@ export default function Projects() {
     },
     {
       name: "TechNova",
-      icon: <IoIosRocket size={50} />,
+      icon: <IoIosRocket className="text-2xl md:text-3xl" />,
 
       overview:
         "Technova is a modern software services website built with React and Tailwind CSS, offering a range of digital solutions including custom software development, cloud services, UI/UX design, cybersecurity, IT consulting, and digital transformation. It showcases company's services in a clean, responsive, and professional layout",
@@ -132,7 +132,7 @@ export default function Projects() {
                   id={slug}
                 >
                   <div className="mt-8 rounded-lg bg-purple-200 p-4 shadow-lg dark:bg-gray-700">
-                    <h1 className="mt-8 flex items-center justify-center gap-2 md:text-5xl text-3xl font-bold text-purple-700 dark:text-purple-500">
+                    <h1 className="mt-8 flex items-center justify-center gap-2 text-2xl md:text-3xl font-bold text-purple-700 dark:text-purple-500">
                       {icon}
                       {name}
                     </h1>
