@@ -4,7 +4,7 @@ export default function WhatDrivesMe() {
     <>
       <div className="h-auto p-4">
         <div className="mx-auto max-w-7xl text-center">
-          <h1 className="text-4xl font-bold text-purple-700 dark:text-purple-500">
+          <h1 className="md:text-4xl text-2xl font-bold text-purple-700 dark:text-purple-500">
             What Drives me?
           </h1>
           <p className="mt-8 text-justify text-lg leading-loose md:text-xl dark:text-white">
