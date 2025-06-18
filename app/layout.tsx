@@ -20,7 +20,7 @@ export default function RootLayout({
       <head>
         <ThemeModeScript />
       </head>
-      <body className="bg-purple-100 dark:bg-gray-900"
+      <body className="bg-purple-200 dark:bg-gray-900"
       >
         <Navbar/>
         {children}
