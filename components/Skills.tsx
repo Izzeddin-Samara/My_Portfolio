@@ -12,7 +12,7 @@ export default function Skills() {
   return (
     <>
       <div className="mt-15 space-y-15 text-center">
-        <h1 className="text-4xl font-bold text-purple-700 dark:text-purple-500">
+        <h1 className="text-2xl font-bold text-purple-700 md:text-4xl dark:text-purple-500">
           Skills and Technologies
         </h1>
         <div>
@@ -121,17 +121,26 @@ export default function Skills() {
             <li>
               <img height={60} width={60} src="mailtrap.avif" />
             </li>
+            <li>
+              <img
+                src="restapi.png"
+                alt="REST API"
+                height={60}
+                width={60}
+                className="rounded-lg bg-white p-2 dark:bg-white"
+              />
+            </li>
           </ul>
         </div>
-          <p className="mt-8 mb-10 text-sm leading-loose md:text-xl dark:text-white">
-            Want to know more about my Skills set?{" "}
-            <Link
-              className="text-md ml-2 border-b-4 border-purple-700 font-bold text-purple-700 transition-all hover:border-transparent dark:border-purple-500 dark:text-purple-500 dark:hover:border-transparent"
-              href="/skills"
-            >
-              Learn more
-            </Link>
-          </p>
+        <p className="mt-8 mb-10 text-sm leading-loose md:text-xl dark:text-white">
+          Want to know more about my Skills set?{" "}
+          <Link
+            className="text-md ml-2 border-b-4 border-purple-700 font-bold text-purple-700 transition-all hover:border-transparent dark:border-purple-500 dark:text-purple-500 dark:hover:border-transparent"
+            href="/skills"
+          >
+            Learn more
+          </Link>
+        </p>
       </div>
     </>
   );

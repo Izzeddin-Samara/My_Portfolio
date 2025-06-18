@@ -12,12 +12,12 @@ export default function Skills() {
   return (
     <>
       <div>
-        <div className="mx-auto min-h-screen max-w-7xl mt-40">
+        <div className="mx-auto mt-40 min-h-screen max-w-7xl">
           <div className="px-6 text-gray-900">
-            <h1 className="mt-15 mb-10 text-center md:text-3xl text-2xl font-bold text-purple-700 dark:text-purple-500">
+            <h1 className="mt-15 mb-10 text-center text-2xl font-bold text-purple-700 md:text-3xl dark:text-purple-500">
               Skills & Technologies
             </h1>
-            <p className="mb-4 text-center text-justify md:text-xl text-lg dark:text-white leading-loose">
+            <p className="mb-4 text-center text-justify text-lg leading-loose md:text-xl dark:text-white">
               I’m passionate about crafting clean, efficient, and scalable web
               applications using a variety of tools and technologies. Below are
               the key languages, frameworks, databases, and tools I work with
@@ -28,7 +28,7 @@ export default function Skills() {
           <div className="mt-15 space-y-15 text-center">
             <div>
               <h1 className="text-2xl font-bold dark:text-white">Languages</h1>
-              <ul className="mt-8 flex flex-wrap md:flex-nowrap items-center justify-center gap-8 md:flex-row">
+              <ul className="mt-8 flex flex-wrap items-center justify-center gap-8 md:flex-row md:flex-nowrap">
                 <li>
                   <FaHtml5 size={60} color="#ff6d00" />
                 </li>
@@ -54,7 +54,7 @@ export default function Skills() {
               <h1 className="mt-8 text-2xl font-bold dark:text-white">
                 Frameworks/Libraries
               </h1>
-              <ul className="mt-8 flex flex-wrap md:flex-nowrap items-center justify-center gap-8 md:flex-row">
+              <ul className="mt-8 flex flex-wrap items-center justify-center gap-8 md:flex-row md:flex-nowrap">
                 <li>
                   <SiDjango className="dark:text-white" size={60} />
                 </li>
@@ -88,7 +88,7 @@ export default function Skills() {
               <h1 className="mt-8 text-2xl font-bold dark:text-white">
                 Databases
               </h1>
-              <ul className="mt-8 flex flex-wrap md:flex-nowrap items-center justify-center gap-8 md:flex-row">
+              <ul className="mt-8 flex flex-wrap items-center justify-center gap-8 md:flex-row md:flex-nowrap">
                 <li>
                   <GrMysql
                     className="text-[oklch(0.44_0.08_246.3)] dark:text-white"
@@ -106,7 +106,7 @@ export default function Skills() {
             </div>
             <div>
               <h1 className="mt-8 text-2xl font-bold dark:text-white">Tools</h1>
-              <ul className="mt-8 flex flex-wrap md:flex-nowrap items-center justify-center gap-8 md:flex-row">
+              <ul className="mt-8 flex flex-wrap items-center justify-center gap-8 md:flex-row md:flex-nowrap">
                 <li>
                   <img
                     height={60}
@@ -134,21 +134,30 @@ export default function Skills() {
                 <li>
                   <img height={60} width={60} src="mailtrap.avif" />
                 </li>
+                <li>
+                  <img
+                    src="restapi.png"
+                    alt="REST API"
+                    height={60}
+                    width={60}
+                    className="rounded-lg bg-white p-2 dark:bg-white"
+                  />
+                </li>
               </ul>
             </div>
           </div>
           <div className="px-6 py-10 text-gray-900">
-            <h1 className="mt-15 mb-10 text-center md:text-3xl text-2xl font-bold text-purple-700 dark:text-purple-500">
+            <h1 className="mt-15 mb-10 text-center text-2xl font-bold text-purple-700 md:text-3xl dark:text-purple-500">
               Soft Skills & Strengths
             </h1>
-            <p className="mb-8 text-center text-justify md:text-xl text-lg dark:text-white leading-loose">
+            <p className="mb-8 text-center text-justify text-lg leading-loose md:text-xl dark:text-white">
               Beyond technical skills, I believe that effective communication,
               strong problem-solving abilities, and teamwork are the
               cornerstones of successful software development. I take pride in
               clearly articulating ideas and actively listening to teammates and
               clients to ensure alignment and understanding.
             </p>
-            <p className="mb-8 text-center text-justify md:text-xl text-lg dark:text-white leading-loose">
+            <p className="mb-8 text-center text-justify text-lg leading-loose md:text-xl dark:text-white">
               I excel at breaking down complex problems into manageable steps
               and approaching challenges with a positive, solution-oriented
               mindset. Collaboration energizes me — I enjoy contributing to a
@@ -157,7 +166,7 @@ export default function Skills() {
               key strengths of mine, allowing me to balance multiple tasks and
               deadlines without compromising quality
             </p>
-            <p className="mb-8 text-center text-justify md:text-xl text-lg dark:text-white leading-loose">
+            <p className="mb-8 text-center text-justify text-lg leading-loose md:text-xl dark:text-white">
               In addition, I’m adaptable and open-minded, ready to take
               constructive feedback and continuously improve both my technical
               and interpersonal skills. These soft skills enable me to work
@@ -167,23 +176,23 @@ export default function Skills() {
           </div>
 
           <div className="px-6 text-gray-900">
-            <h1 className="mt-15 mb-10 text-center md:text-3xl text-2xl font-bold text-purple-700 dark:text-purple-500">
+            <h1 className="mt-15 mb-10 text-center text-2xl font-bold text-purple-700 md:text-3xl dark:text-purple-500">
               Continuous Learning
             </h1>
-            <p className="mb-8 text-center text-justify md:text-xl text-lg dark:text-white leading-loose">
+            <p className="mb-8 text-center text-justify text-lg leading-loose md:text-xl dark:text-white">
               The tech landscape is constantly evolving, and staying current is
               critical to remaining effective and innovative as a developer. I
               am deeply committed to lifelong learning and embrace every
               opportunity to expand my knowledge and expertise
             </p>
-            <p className="mb-8 text-center text-justify md:text-xl text-lg dark:text-white leading-loose">
+            <p className="mb-8 text-center text-justify text-lg leading-loose md:text-xl dark:text-white">
               Whether it’s through reading official documentation, experimenting
               with new tools and libraries, or engaging with the developer
               community, I stay proactive in sharpening my skills. I regularly
               follow blogs, tutorials, and courses to understand best practices
               and emerging trends
             </p>
-            <p className="mb-8 text-center text-justify md:text-xl text-lg dark:text-white leading-loose">
+            <p className="mb-8 text-center text-justify text-lg leading-loose md:text-xl dark:text-white">
               I also believe hands-on experience is invaluable — I enjoy
               building side projects that challenge me to apply new concepts and
               technologies in real-world contexts. This ongoing learning mindset
@@ -192,16 +201,16 @@ export default function Skills() {
             </p>
           </div>
           <div className="px-6 py-20 text-center">
-            <h1 className="text-center md:text-2xl text-md font-bold dark:text-white text-justify">
+            <h1 className="text-md text-center text-justify font-bold md:text-2xl dark:text-white">
               Need a frontend developer who can turn ideas into clean,
               responsive, and modern interfaces?
             </h1>
-            <p className="mt-4 md:mt-8 text-center md:text-xl text-sm dark:text-white">
+            <p className="mt-4 text-center text-sm md:mt-8 md:text-xl dark:text-white">
               Let’s build something awesome together.
             </p>
 
             <Link href="/contact">
-              <button className="mt-4 md:mt-8 cursor-pointer rounded-lg bg-purple-700 p-4 md:text-2xl text-sm text-white outline-none hover:bg-purple-800 focus:ring-4 focus:ring-purple-300">
+              <button className="mt-4 cursor-pointer rounded-lg bg-purple-700 p-4 text-sm text-white outline-none hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 md:mt-8 md:text-2xl">
                 Contact Me Now!
               </button>
             </Link>
