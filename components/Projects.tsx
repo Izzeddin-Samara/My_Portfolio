@@ -51,7 +51,7 @@ export default function Projects() {
   ];
   return (
     <>
-      <div className="w-full py-30">
+      <div className="w-full py-20">
         <div className="mx-auto max-w-5xl">
           <h1 className="mb-8 text-center text-4xl font-bold text-purple-700 dark:text-purple-500">
             Projects
