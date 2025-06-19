@@ -50,14 +50,14 @@ export default function Projects() {
         "Responsive and clean user interface",
       ],
       techstack: [
-        { id: "react", icon: <FaReact size={60} color="#007acc" /> },
-        { id: "ts", icon: <SiTypescript size={60} color="#007acc" /> },
+        { id: "react", icon: <FaReact className="text-4xl md:text-5xl" color="#007acc" /> },
+        { id: "ts", icon: <SiTypescript className="text-4xl md:text-5xl" color="#007acc" /> },
         {
           id: "tailwind",
-          icon: <RiTailwindCssFill size={60} color="#06b6d4" />,
+          icon: <RiTailwindCssFill className="text-4xl md:text-5xl" color="#06b6d4" />,
         },
-        { id: "express", icon: <SiExpress size={60} color="black" /> },
-        { id: "mongodb", icon: <SiMongodb size={60} color="#439934" /> },
+        { id: "express", icon: <SiExpress className="text-4xl md:text-5xl" color="black" /> },
+        { id: "mongodb", icon: <SiMongodb className="text-4xl md:text-5xl" color="#439934" /> },
       ],
       liveDemo: "https://team-base-dd23.vercel.app/",
       githubrepo: "https://github.com/Izzeddin-Samara/TeamBase",
@@ -80,11 +80,11 @@ export default function Projects() {
         "Clean, intuitive layout — with a modern Navbar and Footer",
       ],
       techstack: [
-        { id: "react", icon: <FaReact size={60} color="#007acc" /> },
-        { id: "ts", icon: <SiTypescript size={60} color="#007acc" /> },
+        { id: "react", icon: <FaReact className="text-4xl md:text-5xl" color="#007acc" /> },
+        { id: "ts", icon: <SiTypescript className="text-4xl md:text-5xl" color="#007acc" /> },
         {
           id: "tailwind",
-          icon: <RiTailwindCssFill size={60} color="#06b6d4" />,
+          icon: <RiTailwindCssFill className="text-4xl md:text-5xl" color="#06b6d4" />,
         },
       ],
       liveDemo: "https://tech-nova-tawny.vercel.app/",
@@ -131,19 +131,19 @@ export default function Projects() {
                   key={index}
                   id={slug}
                 >
-                  <div className="mt-8 rounded-lg bg-purple-200 p-4 shadow-lg dark:bg-gray-700">
+                  <div className="mt-8 rounded-lg bg-purple-300 p-4 shadow-lg dark:bg-gray-700">
                     <h1 className="mt-8 flex items-center justify-center gap-2 text-2xl md:text-3xl font-bold text-purple-700 dark:text-purple-500">
                       {icon}
                       {name}
                     </h1>
                     <h3 className="mt-16 text-lg font-semibold">Overview:</h3>
                     <div>
-                      <p className="mx-auto mt-8  text-justify text-gray-600 dark:text-gray-300 p-4">
+                      <p className="mx-auto mt-8 md:w-[85%]  text-justify text-gray-600 dark:text-gray-300 p-4">
                         {overview}
                       </p>
                       <div className="mt-8">
                         <Image
-                          width={800}
+                          width={1000}
                           height={400}
                           className="mx-auto rounded-lg shadow-xl"
                           src={`/${screenshot}`}
