@@ -95,7 +95,7 @@ export default function Projects() {
   return (
     <>
       <div>
-        <div className="mx-auto min-h-screen max-w-7xl py-30">
+        <div className="mx-auto min-h-screen max-w-7xl mt-40">
           <div className="text-center">
             <h1 className="text-2xl md:text-3xl font-bold text-purple-700 dark:text-purple-500">
               Projects
@@ -214,11 +214,11 @@ export default function Projects() {
             )}
           </div>
           <div className="px-6 py-30 text-center">
-            <h1 className="text-center md:text-2xl  text-lg font-bold dark:text-white">
+            <h1 className="md:text-2xl text-justify  text-lg font-bold dark:text-white">
               Have a creative idea, business need, or technical challenge that
               needs a smart solution?
             </h1>
-            <p className="mt-8 text-center text-sm md:text-xl dark:text-white">
+            <p className="mt-8 text-justify text-sm md:text-xl dark:text-white">
               Let’s work together to build something that’s smart, scalable, and
               beautifully designed.
             </p>
