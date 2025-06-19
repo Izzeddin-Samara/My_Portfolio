@@ -47,6 +47,7 @@ export default function Skills() {
                     height={60}
                     width={60}
                     src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+                    alt="Python Logo"
                   />
                 </li>
               </ul>
@@ -64,6 +65,7 @@ export default function Skills() {
                     height={60}
                     width={60}
                     src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+                    alt="React Logo"
                   />
                 </li>
                 <li>
@@ -77,6 +79,7 @@ export default function Skills() {
                     height={60}
                     width={60}
                     src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg"
+                    alt="Bootstrap Logo"
                   />
                 </li>
                 <li>
@@ -84,6 +87,7 @@ export default function Skills() {
                     height={60}
                     width={60}
                     src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
+                    alt="Tailwind CSS Logo"
                   />
                 </li>
               </ul>
@@ -104,6 +108,7 @@ export default function Skills() {
                     height={60}
                     width={60}
                     src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg"
+                    alt="MongoDB Logo"
                   />
                 </li>
               </ul>
@@ -116,10 +121,11 @@ export default function Skills() {
                     height={60}
                     width={60}
                     src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg"
+                    alt="Postman Logo"
                   />
                 </li>
                 <li>
-                  <img height={60} width={60} src="mysqlworkbench.svg" />
+                  <img height={60} width={60} src="mysqlworkbench.svg" alt="MySQL Workbench Logo" />
                 </li>
 
                 <li>
@@ -127,16 +133,17 @@ export default function Skills() {
                     height={60}
                     width={60}
                     src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"
+                    alt="Git Logo"
                   />
                 </li>
                 <li>
                   <FaGithub className="dark:text-white" size={60} />
                 </li>
                 <li>
-                  <img height={60} width={60} src="mailjet.webp" />
+                  <img height={60} width={60} src="mailjet.webp" alt="Mailjet Logo" />
                 </li>
                 <li>
-                  <img height={60} width={60} src="mailtrap.avif" />
+                  <img height={60} width={60} src="mailtrap.avif" alt="Mailtrap Logo" />
                 </li>
                 <li>
                   <img
