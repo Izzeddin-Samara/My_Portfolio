@@ -136,12 +136,10 @@ export default function Contact() {
             PUBLIC_KEY,
           );
 
-          setTimeout(() => {
-            setModalContent("success");
-            setError("");
-            setFormData({ name: "", email: "", message: "" });
-            setErrors({ name: "", email: "", message: "" });
-          }, 2000);
+          setModalContent("success");
+          setError("");
+          setFormData({ name: "", email: "", message: "" });
+          setErrors({ name: "", email: "", message: "" });
         } else {
           setError("Failed to send message. Please try again later.");
           setSuccess("");
@@ -164,7 +162,7 @@ export default function Contact() {
         <div className="mx-auto mt-10 h-auto max-w-6xl p-1 py-20">
           <div className="flex h-[200px] items-center">
             <div className="w-full text-center">
-              <h1 className="text-3xl font-bold text-purple-700 md:text-3xl lg:text-5xl">
+              <h1 className="text-3xl font-bold text-purple-700 md:text-3xl lg:text-5xl dark:text-purple-500">
                 Contact me
               </h1>
               <p className="mt-8 text-sm md:text-lg dark:text-white">
@@ -181,7 +179,7 @@ export default function Contact() {
             <div className="mx-auto h-auto max-w-3xl">
               <div className="mx-auto grid grid-cols-1 gap-8 md:grid-cols-1 lg:grid-cols-1">
                 {/* Contact Form*/}
-                <div className="rounded-lg bg-gray-100 p-6 shadow-xl dark:bg-gray-700 dark:text-white">
+                <div className="rounded-lg bg-gray-100 p-10 shadow-xl dark:bg-gray-700 dark:text-white">
                   <form
                     onSubmit={handleSubmit}
                     className="mx-auto space-y-6 text-center"
