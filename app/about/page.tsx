@@ -3,8 +3,8 @@ import Link from "next/link";
 export default function About() {
   return (
     <>
-      <div className="dark:bg-gray-800">
-        <div className="mx-auto min-h-screen max-w-7xl py-30">
+      <div className="dark:bg-gray-800 mt-20">
+        <div className="mx-auto min-h-screen max-w-7xl py-15">
           <div className="px-6 text-gray-900 dark:bg-gray-800">
             <h1 className="mt-15 mb-10 text-center md:text-3xl text-2xl font-bold text-purple-700 md:text-4xl dark:text-purple-500">
               About me
@@ -81,7 +81,7 @@ export default function About() {
           </div>
 
           {/* CTA Section */}
-          <div className="px-6 py-20 text-center">
+          <div className="px-6 text-center mt-15">
             <h1 className="text-justify text-xl font-bold md:text-2xl dark:text-white">
               Looking for a passionate frontend developer who&rsquo;s always learning
               and eager to bring ideas to life?
