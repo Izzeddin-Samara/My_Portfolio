@@ -162,7 +162,7 @@ export default function Contact() {
         <div className="mx-auto mt-10 h-auto max-w-6xl p-1 py-20">
           <div className="flex h-[200px] items-center">
             <div className="w-full text-center">
-              <h1 className="text-3xl font-bold text-purple-700 md:text-3xl lg:text-5xl dark:text-purple-500">
+              <h1 className="text-3xl font-bold text-purple-700 md:text-4xl dark:text-purple-500">
                 Contact me
               </h1>
               <p className="mt-8 text-sm md:text-lg dark:text-white">
