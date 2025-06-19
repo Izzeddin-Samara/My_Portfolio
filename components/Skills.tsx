@@ -144,7 +144,7 @@ export default function Skills() {
           </ul>
         </div>
         <p className="mt-8 mb-10 text-sm leading-loose md:text-xl dark:text-white">
-          Want to know more about my Skills set?{" "}
+          Interested in learning more about my skill set?{" "}
           <Link
             className="text-md ml-2 border-b-4 border-purple-700 font-bold text-purple-700 transition-all hover:border-transparent dark:border-purple-500 dark:text-purple-500 dark:hover:border-transparent"
             href="/skills"
