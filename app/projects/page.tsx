@@ -214,11 +214,11 @@ export default function Projects() {
             )}
           </div>
           <div className="px-6 py-30 text-center">
-            <h1 className="md:text-2xl text-justify  text-lg font-bold dark:text-white">
+            <h1 className="md:text-2xl text-center  text-lg font-bold dark:text-white">
               Have a creative idea, business need, or technical challenge that
               needs a smart solution?
             </h1>
-            <p className="mt-8 text-justify text-sm md:text-xl dark:text-white">
+            <p className="mt-8 text-center text-sm md:text-xl dark:text-white">
               Let’s work together to build something that’s smart, scalable, and
               beautifully designed.
             </p>
