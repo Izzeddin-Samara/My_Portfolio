@@ -33,12 +33,14 @@ export default function HeroSection() {
                 on clean design, and seamless user experiences.
               </p>
               <div className="mt-10 flex justify-center gap-2">
-                <button
-                  type="button"
-                  className="flex cursor-pointer items-center gap-2 rounded-lg bg-purple-700 p-3 text-sm text-white outline-none hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 md:text-lg"
-                >
-                  Download CV <FaDownload size={20} />
-                </button>
+                <a href="/izzeddin-cv.pdf" target="_blank">
+                  <button
+                    type="button"
+                    className="flex cursor-pointer items-center gap-2 rounded-lg bg-purple-700 p-4 text-sm text-white outline-none hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 md:text-lg"
+                  >
+                    Download CV <FaDownload size={20} />
+                  </button>
+                </a>
 
                 <Link href="/contact">
                   <button
