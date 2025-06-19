@@ -81,7 +81,7 @@ export default function Projects() {
                     ))}
                   </ul>
                   <Link href={`/projects#${slug}`}>
-                    <button className="md:w-[60%] w-[80%]  cursor-pointer rounded-lg bg-purple-700 p-4 text-md md:text-xl font-bold text-white shadow-xl outline-none hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 dark:bg-purple-600 dark:hover:bg-purple-700">
+                    <button className="md:w-[60%] w-[80%]  cursor-pointer rounded-lg bg-purple-700 p-4 text-md md:text-xl font-bold text-white shadow-xl outline-none hover:bg-purple-800 focus:ring-4 focus:ring-purple-400 dark:bg-purple-600 dark:hover:bg-purple-700">
                       Learn more
                     </button>
                   </Link>
