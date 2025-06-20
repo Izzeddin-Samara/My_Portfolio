@@ -12,9 +12,11 @@ export default function Footer() {
       <footer className="bg-purple-300 p-4 dark:bg-gray-800">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
           <div>
-            <h1 className="text-center text-xl font-bold text-purple-700 md:text-left dark:text-purple-500">
-              Izzeddin Samara
-            </h1>
+            <Link href="/">
+              <h1 className="text-center text-xl font-bold text-purple-700 md:text-left dark:text-purple-500">
+                Izzeddin Samara
+              </h1>
+            </Link>
           </div>
           <div>
             <ul className="flex flex-col items-center justify-center gap-6 md:flex-row dark:text-white">
