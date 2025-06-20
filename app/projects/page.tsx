@@ -187,7 +187,7 @@ export default function Projects() {
                           >
                             <button
                               type="button"
-                              className="flex w-full cursor-pointer items-center justify-center gap-2 rounded-lg bg-purple-700 p-4 md:text-xl text-sm text-white outline-none hover:bg-purple-800 hover:shadow-xl focus:ring-4 focus:ring-purple-300"
+                              className="flex w-full cursor-pointer items-center justify-center gap-2 rounded-lg bg-purple-700 p-4 md:text-md text-sm text-white outline-none hover:bg-purple-800 hover:shadow-xl focus:ring-4 focus:ring-purple-300"
                             >
                               Live Demo <FaGlobe size={25} />
                             </button>
@@ -200,7 +200,7 @@ export default function Projects() {
                           >
                             <button
                               type="button"
-                              className="flex w-full cursor-pointer items-center justify-center gap-2 rounded-lg bg-gray-800 p-4 md:text-xl text-sm text-white outline-none hover:bg-gray-950 hover:shadow-xl focus:ring-4 focus:ring-gray-300"
+                              className="flex w-full cursor-pointer items-center justify-center gap-2 rounded-lg bg-gray-800 p-4 md:text-md text-sm text-white outline-none hover:bg-gray-950 hover:shadow-xl focus:ring-4 focus:ring-gray-300"
                             >
                               View on GitHub <FaGithub size={25} />
                             </button>
