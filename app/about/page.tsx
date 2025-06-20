@@ -5,7 +5,7 @@ export default function About() {
     <>
       <div className="mt-15">
         <div className="mx-auto min-h-screen max-w-7xl py-15">
-          <div className="px-6 text-gray-900 dark:bg-gray-800">
+          <div className="px-6 text-gray-900">
             <h1 className="mt-15 mb-10 text-center md:text-3xl text-2xl font-bold text-purple-700 md:text-4xl dark:text-purple-500">
               About me
             </h1>
