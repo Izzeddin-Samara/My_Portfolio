@@ -38,7 +38,9 @@ export default function Projects() {
       name: "TeamBase",
       icon: <HiUsers className="text-2xl md:text-3xl" />,
       overview:
-        "TeamBase is a web application for managing team member information. It includes login and registration, and lets users add, edit, delete, and search employee records.",
+      "TeamBase is a web application for managing team member information. It includes login and registration features, and allows users to add, edit, delete, and search employee records. It also includes a contact form powered by Mailjet, all presented in a clean, responsive UI.",
+
+
       screenshot: "TeamBase.jpg",
       features: [
         "User authentication (login and registration)",
@@ -68,7 +70,7 @@ export default function Projects() {
       icon: <IoIosRocket className="text-2xl md:text-3xl" />,
 
       overview:
-        "Technova is a modern software services website built with React and Tailwind CSS, offering a range of digital solutions including custom software development, cloud services, UI/UX design, cybersecurity, IT consulting, and digital transformation. It showcases company's services in a clean, responsive, and professional layout",
+        "Technova is a modern software services website, offering a range of digital solutions including custom software development, cloud services, UI/UX design, cybersecurity, IT consulting, and digital transformation. It showcases company's services in a clean, responsive, and professional layout",
       screenshot: "TechNova.jpeg",
       features: [
         "Modern, fully responsive design — optimized for all screen sizes",
