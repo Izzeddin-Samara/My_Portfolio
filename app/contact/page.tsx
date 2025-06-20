@@ -177,9 +177,9 @@ export default function Contact() {
           {/* Contact body*/}
           <div className="w-full">
             <div className="mx-auto h-auto max-w-3xl">
-              <div className="mx-auto grid grid-cols-1 gap-8 md:grid-cols-1 lg:grid-cols-1">
+              <div className="mx-auto grid grid-cols-1 gap-8 md:grid-cols-1 lg:grid-cols-1 p-2">
                 {/* Contact Form*/}
-                <div className="rounded-lg bg-gray-100 p-10 shadow-xl dark:bg-gray-700 dark:text-white">
+                <div className="rounded-lg bg-gray-100 md:p-10 p-4  shadow-xl dark:bg-gray-700 dark:text-white">
                   <form
                     onSubmit={handleSubmit}
                     className="mx-auto space-y-6 text-center"
