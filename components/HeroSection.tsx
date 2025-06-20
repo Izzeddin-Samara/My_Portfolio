@@ -38,7 +38,7 @@ export default function HeroSection() {
                     type="button"
                     className="flex cursor-pointer items-center gap-2 rounded-lg bg-purple-700 p-4 text-sm text-white outline-none hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 md:text-lg"
                   >
-                    Download CV <FaDownload size={20} />
+                    Download CV <FaDownload size={25} />
                   </button>
                 </a>
 
