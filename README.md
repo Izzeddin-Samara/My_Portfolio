@@ -4,3 +4,22 @@ A responsive portfolio web application showcasing my projects, skills, and exper
 ## 🌐 Deployment
 This project is deployed with [Vercel](https://vercel.com/). Check out the live version of my portfolio here:
 [https://izzeddin-samara.vercel.app/](https://izzeddin-samara.vercel.app//)
+
+## ✔️ Key Features 
+- **Responsive Design** – Fully optimized for all devices, from mobile to desktop.
+  
+- **Light/Dark Mode Toggle** – Seamlessly switch between light and dark themes.
+  
+- **Modern Tech Stack** – Built using Next.js, TypeScript, and Tailwind CSS.
+  
+- **Deployed on Vercel** – Fast and reliable global deployment.
+  
+- **About Me Page** – Shares my background, why I entered web development, and my long-term goals.
+  
+- **Interactive Contact Form** – Easily get in touch via a contact form powered by EmailJS.
+  
+- **Skills Section** – Highlights core technical skills using recognizable icons.
+
+- **Project Showcase** – Highlights real-world projects with descriptions, features, tech stack, and GitHub/demo links.
+
+- **Simple and user-friendly interface** – Minimal design focused on clarity, readability, and a smooth user experience.
