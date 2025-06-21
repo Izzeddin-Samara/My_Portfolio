@@ -29,5 +29,25 @@ This project is deployed with [Vercel](https://vercel.com/). Check out the live 
 
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" width="40" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" width="40" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" width="40" />  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original.svg" width="40" /> 
 
+## 🔧 Installation
+⚠️ Make sure you have [Node js](https://nodejs.org/en) installed.
+1. ⬇️ Clone the repository:
+   ```bash
+   git clone https://github.com/Izzeddin-Samara/My_Portfolio
+   ```
+2. 📁 Navigate to the project folder
+   ```bash
+   cd My_Portfolio
+   ```
+3. 📦 Install the packages
+   ```bash
+   npm install
+   ```
+4. 💻 Run the development server
+   ```bash
+   npm run dev
+   ```
+   Open your browser and go to: [http://localhost:3000/](http://localhost:3000/)
+
 
 
