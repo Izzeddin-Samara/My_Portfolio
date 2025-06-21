@@ -23,3 +23,11 @@ This project is deployed with [Vercel](https://vercel.com/). Check out the live 
 - **Project Showcase** – Highlights real-world projects with descriptions, features, tech stack, and GitHub/demo links.
 
 - **Simple and user-friendly interface** – Minimal design focused on clarity, readability, and a smooth user experience.
+
+
+## 🛠️ Tech Stack
+
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" width="40" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" width="40" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" width="40" />  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original.svg" width="40" /> 
+
+
+
