@@ -241,43 +241,43 @@ export default function Contact() {
         </div>
       </div>
       <Modal show={showModal} size="md">
-        <ModalBody>
+        <ModalBody className="dark:bg-gray-700">
           {modalContent === "loading" ? (
-            <div className="mx-auto flex max-w-xs flex-col items-center justify-center space-y-6 rounded-lg bg-purple-50 p-6 shadow-md">
+            <div className="mx-auto flex max-w-xs flex-col items-center justify-center space-y-6  p-6">
               <Spinner
                 aria-label="Loading spinner"
                 size="xl"
                 color="purple"
                 className="animate-spin"
               />
-              <p className="text-lg font-medium text-purple-700">
+              <p className="text-lg font-medium text-purple-700 dark:text-purple-500">
                 Sending your message...
               </p>
-              <p className="text-sm text-purple-500 italic">
+              <p className="text-sm text-purple-500 italic dark:text-purple-300 text-center">
                 Please wait a moment while we process your request.
               </p>
             </div>
           ) : (
-            <div className="mx-auto max-w-md rounded-lg bg-green-100 p-6 text-center shadow-md">
+            <div className="mx-auto max-w-md p-6 text-center dark:bg-gray-700">
               <FaCheckCircle
                 size={60}
-                className="mx-auto mb-4 text-green-600"
+                className="mx-auto mb-4 text-green-600 dark:text-green-400"
               />
-              <h2 className="text-2xl font-semibold text-green-700">
+              <h2 className="text-2xl font-bold text-green-700 dark:text-green-400">
                 Message Sent!
               </h2>
-              <p className="mt-2 text-green-700">
+              <p className="mt-2 text-green-700 dark:text-white">
                 Thank you for reaching out. I have received your message and
                 will get back to you as soon as possible.
               </p>
-              <p className="mt-1 text-sm text-green-600">Have a great day!</p>
+              <p className="mt-1 text-sm text-green-600 dark:text-white">Have a great day!</p>
             </div>
           )}
         </ModalBody>
         <ModalFooter>
           {modalContent === "success" && (
             <Button
-              className="cursor-pointer"
+              className="cursor-pointer dark:bg-purple-500 dark:hover:bg-purple-600"
               color="purple"
               onClick={handleCloseModal}
             >
