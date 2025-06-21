@@ -12,7 +12,7 @@ export default function Projects() {
     {
       name: "TeamBase",
       icon: (
-        <HiUsers className="text-2xl text-purple-700 md:text-3xl" />
+        <HiUsers className="text-2xl text-purple-700 dark:text-purple-500 md:text-3xl" />
       ),
       overview:
         "A full-stack team management app with CRUD, login, and real-time search features.",
@@ -24,7 +24,7 @@ export default function Projects() {
           id: "tailwind",
           icon: <RiTailwindCssFill className="text-3xl md:text-4xl" color="#06b6d4" />,
         },
-        { id: "express", icon: <SiExpress className="text-3xl md:text-4xl" color="black" /> },
+        { id: "express", icon: <SiExpress className="text-3xl md:text-4xl dark:text-white text-black" /> },
         { id: "mongodb", icon: <SiMongodb className="text-3xl md:text-4xl" color="#439934" /> },
       ],
       slug: "TeamBase",
@@ -32,7 +32,7 @@ export default function Projects() {
     {
       name: "TechNova",
       icon: (
-        <IoIosRocket className="text-2xl text-purple-700 md:text-3xl" />
+        <IoIosRocket className="text-2xl text-purple-700 dark:text-purple-500 md:text-3xl" />
       ),
 
       overview:
@@ -66,7 +66,7 @@ export default function Projects() {
                   key={index}
                   className="space-y-10 md:w-[90%] mx-auto rounded-lg bg-purple-300 p-8 text-center shadow-xl dark:bg-gray-700 dark:text-white"
                 >
-                  <h1 className=" flex items-center justify-center gap-2 text-2xl font-bold text-purple-700 md:text-3xl dark:text-purple-600">
+                  <h1 className=" flex items-center justify-center gap-2 text-2xl font-bold text-purple-700 md:text-3xl dark:text-purple-500">
                     {icon}
                     {name}
                   </h1>
