@@ -222,7 +222,7 @@ export default function Contact() {
                         }`}
                       ></textarea>
                       {errors.message && (
-                        <p className="text-center text-red-700">
+                        <p className="text-center text-[14px] text-red-700">
                           {errors.message}
                         </p>
                       )}
