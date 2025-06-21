@@ -21,9 +21,9 @@ export default function Skills() {
             <p className="mb-4 text-center text-justify text-lg leading-loose md:text-xl dark:text-white">
               I’m passionate about crafting clean, efficient, and scalable web
               applications using a variety of tools and technologies. Below are
-              the key languages, frameworks, databases, and tools I work with
-              regularly. I enjoy continuously learning and expanding my skill
-              set to stay up-to-date with modern development practices.
+              the key languages, frameworks, databases, and tools I have worked
+              with. I enjoy continuously learning and expanding my skill set to
+              stay up-to-date with modern development practices.
             </p>
           </div>
           <div className="mt-15 space-y-15 text-center">
@@ -125,7 +125,12 @@ export default function Skills() {
                   />
                 </li>
                 <li>
-                  <img height={60} width={60} src="mysqlworkbench.svg" alt="MySQL Workbench Logo" />
+                  <img
+                    height={60}
+                    width={60}
+                    src="mysqlworkbench.svg"
+                    alt="MySQL Workbench Logo"
+                  />
                 </li>
 
                 <li>
@@ -140,10 +145,20 @@ export default function Skills() {
                   <FaGithub className="dark:text-white" size={60} />
                 </li>
                 <li>
-                  <img height={60} width={60} src="mailjet.webp" alt="Mailjet Logo" />
+                  <img
+                    height={60}
+                    width={60}
+                    src="mailjet.webp"
+                    alt="Mailjet Logo"
+                  />
                 </li>
                 <li>
-                  <img height={60} width={60} src="mailtrap.avif" alt="Mailtrap Logo" />
+                  <img
+                    height={60}
+                    width={60}
+                    src="mailtrap.avif"
+                    alt="Mailtrap Logo"
+                  />
                 </li>
                 <li>
                   <img
@@ -197,12 +212,14 @@ export default function Skills() {
               opportunity to expand my knowledge and expertise
             </p>
             <p className="mb-8 text-center text-justify text-lg leading-loose md:text-xl dark:text-white">
-              Whether it’s through reading official documentation, experimenting
-              with new tools and libraries, or engaging with the developer
-              community, I stay proactive in sharpening my skills. I regularly
-              follow blogs, tutorials, and courses to understand best practices
-              and emerging trends
+              I learn best by doing. Whether I’m coding a new project from
+              scratch or exploring a fresh library just out of curiosity, I
+              always seek to turn theory into practice. I believe in learning
+              through experimentation, and I love that moment when things
+              finally click after trial and error — it’s what keeps me growing
+              and excited about development.
             </p>
+
             <p className="mb-8 text-center text-justify text-lg leading-loose md:text-xl dark:text-white">
               I also believe hands-on experience is invaluable — I enjoy
               building side projects that challenge me to apply new concepts and
