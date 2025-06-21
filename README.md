@@ -49,5 +49,12 @@ This project is deployed with [Vercel](https://vercel.com/). Check out the live 
    ```
    Open your browser and go to: [http://localhost:3000/](http://localhost:3000/)
 
+ ## 📬 Contact
+
+Feel free to reach out to me via the following:
+
+- **Email**: [izzidinsamara@gmail.com](mailto:izzidinsamara@gmail.com)
+- **LinkedIn**: [https://www.linkedin.com/in/izzeddin-samara/](https://www.linkedin.com/in/izzeddin-samara/)
+
 
 
