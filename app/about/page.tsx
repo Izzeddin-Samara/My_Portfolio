@@ -12,7 +12,7 @@ export default function About() {
             <p className="text-lg md:text-xl mb-4 text-center text-justify leading-loose md:text-xl dark:text-white">
               I&rsquo;m Izzeddin, a{" "}
               <span className="font-bold text-purple-700 dark:text-purple-400">
-                Frontend Developer
+                Web Developer
               </span>{" "}
               with a strong passion for building beautiful and functional web
               experiences. I completed a full-stack development bootcamp at
