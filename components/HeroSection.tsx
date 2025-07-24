@@ -19,19 +19,18 @@ export default function HeroSection() {
             <div className="mt-10 w-full text-center">
               <h1 className="mx-auto flex items-center justify-center gap-2 text-2xl leading-tight font-bold md:text-5xl dark:text-white">
                 Hi, I&rsquo;m Izzeddin{" "}
-                <PiHandWavingFill
-                  className="wave mb-4 text-purple-700 text-4xl md:text-7xl"
-                />
+                <PiHandWavingFill className="wave mb-4 text-4xl text-purple-700 md:text-7xl" />
               </h1>
               <p className="text-md mx-auto mt-12 text-justify text-lg lg:text-xl dark:text-white">
-                A passionate{" "}
+                Passionate{" "}
                 <span className="font-bold text-purple-700 dark:text-purple-500">
-                  Frontend Developer
+                  Web Developer
                 </span>{" "}
-                specializing in React, TypeScript, and Tailwind CSS. I craft
-                modern, responsive, and accessible web applications with a focus
-                on clean design, and seamless user experiences.
+                skilled in React, TypeScript, and Tailwind CSS. I build modern,
+                responsive apps with clean design and have experience with
+                backend tools like Express and Django.
               </p>
+
               <div className="mt-10 flex justify-center gap-2">
                 <a href="/izzeddin-cv.pdf" target="_blank">
                   <button
