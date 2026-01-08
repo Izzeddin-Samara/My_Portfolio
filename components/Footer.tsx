@@ -88,7 +88,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="mailto:izzidinsamara@gmail.com"
+                  href="mailto:izzeddinsamara@outlook.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-purple-700 dark:hover:text-purple-400"
